@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Digital Academy</title>
+    <link rel="stylesheet" href="/css/1.css">
+    <link rel="stylesheet" href="/css/contact-us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+   
+  
+<base target="_blank">
+</head>
+<body>
+
+   <!-- Navbar -->
+     <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span class="logo-text">AcademyIndia</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <div class="nav-item">
+                    <a href="/index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/about.html" class="nav-link">
+                        <i class="fas fa-info-circle"></i> About
+                    </a>
+                </div>
+                
+                <!-- Courses Mega Dropdown -->
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-book-open"></i> All Courses <i class="fas fa-chevron-down"></i>
+                    </a>
+                    
+                    <div class="mega-dropdown">
+                        <div class="dropdown-grid">
+                            <!-- Programming & Development -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-code"></i> Programming & Development</h4>
+                                <ul>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fab fa-python"></i> Python</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fab fa-java"></i> Java</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fas fa-code"></i> C / C++</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fas fa-layer-group"></i> Full Stack Development</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fab fa-js"></i> JavaScript</a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Data & AI -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-chart-line"></i> Data & AI</h4>
+                                <ul>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-database"></i> Data Science</a></li>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-brain"></i> Machine Learning</a></li>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-microchip"></i> Deep Learning</a></li>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-robot"></i> Artificial Intelligence</a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Design & Multimedia -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-paint-brush"></i> Design & Multimedia</h4>
+                                <ul>
+                                    <li><a href="/pages/design&multi-media.html"><i class="fas fa-pen-fancy"></i> UI/UX Design</a></li>
+                                    <li><a href="/pages/design&multi-media.html"><i class="fas fa-palette"></i> Graphic Design</a></li>
+                                    <li><a href="design&multi-media.html"><i class="fas fa-video"></i> Video Editing</a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Digital Skills -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-chart-simple"></i> Digital Skills</h4>
+                                <ul>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-chart-simple"></i> Digital Marketing</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-search"></i> SEO</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fab fa-facebook"></i> Social Media Marketing</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-pen-fancy"></i> Content Writing</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-briefcase"></i> Freelancing Skills</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                <div class="nav-item">
+                    <a href="/pages/career.html" class="nav-link"><i class="fas fa-briefcase"></i> Careers</a>
+                </div>
+               
+                <div class="nav-item">
+                    <a href="/pages/success-stories.html" class="nav-link"><i class="fas fa-star"></i> Success Stories</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/placement.html" class="nav-link"><i class="fas fa-user-tie"></i> Placements</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/contact-us.html" class="nav-link btn-enroll"><i class="fas fa-address-book"></i> Contact</a>
+                </div>
+                
+              
+                
+                
+            </div>
+            
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <a href="/index.html" class="mobile-nav-link">🏠 Home</a>
+            <a href="/pages/about.html" class="mobile-nav-link">ℹ️ About</a>
+            
+            <!-- Mobile Courses Accordion -->
+            <div>
+                <div class="mobile-nav-link" id="mobileCoursesBtn" style="cursor: pointer;">
+                    📚 All Courses <i class="fas fa-chevron-down" id="mobileCoursesIcon"></i>
+                </div>
+                <div class="mobile-dropdown-content" id="mobileCoursesDropdown">
+                    <div class="mobile-dropdown-category">
+                        <h4>💻 Programming & Development</h4>
+                        <a href="/pages/pragramming-dev.html"><i class="fab fa-python"></i> Python</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fab fa-java"></i> Java</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fas fa-code"></i> C / C++</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fab fa-js"></i> JavaScript</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fas fa-layer-group"></i> Full Stack Development</a>
+                    </div>
+                    <div class="mobile-dropdown-category">
+                        <h4>📊 Data & AI</h4>
+                        <a href="/pages/data&ai.html"><i class="fas fa-database"></i> Data Science</a>
+                        <a href="/pages/data&ai.html"><i class="fas fa-brain"></i> Machine Learning</a>
+                        <a href="/pages/data&ai.html"><i class="fas fa-microchip"></i> Deep Learning</a>
+                        <a href="/pages/data&ai.html"><i class="fas fa-robot"></i> Artificial Intelligence</a>
+                    </div>
+                    <div class="mobile-dropdown-category">
+                        <h4>🎨 Design & Multimedia</h4>
+                        <a href="/pages/design&multi-media.html"><i class="fas fa-pen-fancy"></i> UI/UX Design</a>
+                        <a href="/pages/design&multi-media.html"><i class="fas fa-palette"></i> Graphic Design</a>
+                        <a href="/pages/design&multi-media.html"><i class="fas fa-video"></i> Video Editing</a>
+                    </div>
+                    <div class="mobile-dropdown-category">
+                        <h4>📈 Digital Skills</h4>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-chart-simple"></i> Digital Marketing</a>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-search"></i> SEO</a>
+                        <a href="/pages/digital-skills.html"><i class="fab fa-facebook"></i> Social Media Marketing</a>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-pen-fancy"></i> Content Writing</a>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-briefcase"></i> Freelancing Skills</a>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="/pages/career.html" class="mobile-nav-link">💼 Careers</a>
+             <a href="/pages/success-stories.html" class="mobile-nav-link">⭐ Success Stories</a>
+            <a href="/pages/placement.html" class="mobile-nav-link">💼 Placements</a>
+           
+            <div style="margin-top: 1rem;">
+                <a href="/pages/contact-us.html" class="mobile-nav-link" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; justify-content: center;font-size: 1.2em;">
+                    📞 Contact
+                </a>
+            </div>
+        </div>
+    </div>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-bg-anim">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+  <div class="floating-icons">
+    <div class="float-icon fi1"><i class="fas fa-code"></i></div>
+    <div class="float-icon fi2"><i class="fas fa-robot"></i></div>
+    <div class="float-icon fi3"><i class="fas fa-palette"></i></div>
+    <div class="float-icon fi4"><i class="fas fa-chart-line"></i></div>
+    <div class="float-icon fi5"><i class="fas fa-briefcase"></i></div>
+    <div class="float-icon fi6"><i class="fas fa-brain"></i></div>
+  </div>
+  <div class="hero-content" data-aos="fade-up">
+    <div class="hero-badge">
+      <i class="fas fa-star"></i> #1 Digital Skills Academy
+    </div>
+    <h1>Your Future Starts with<br><span class="grad-text">Digital Skills 🚀</span></h1>
+    <p>Empowering students to build successful, future-proof careers in technology, digital marketing, AI, design, and beyond. Join thousands who transformed their lives with us.</p>
+    <div class="hero-btns">
+      <a href="#contact-form" class="btn-primary"><span>📬 Contact Now</span></a>
+      <a href="#careers" class="btn-secondary">Explore Careers →</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+    <div class="stat-num" data-count="12000">0</div>
+    <div class="stat-label">Students Enrolled</div>
+  </div>
+  <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+    <div class="stat-num" data-count="95">0</div>
+    <div class="stat-label">% Placement Rate</div>
+  </div>
+  <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+    <div class="stat-num" data-count="50">0</div>
+    <div class="stat-label">Expert Mentors</div>
+  </div>
+  <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+    <div class="stat-num" data-count="200">0</div>
+    <div class="stat-label">Hiring Partners</div>
+  </div>
+</div>
+
+<!-- CONTACT INFO SECTION -->
+<section class="contact-section" id="contact-info">
+  <div class="text-center" data-aos="fade-up">
+    <div class="section-tag">📞 Get In Touch</div>
+    <h2 class="section-title">We're Here to Help You<br><span style="background:var(--grad1);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Every Step of the Way</span></h2>
+    <p class="section-subtitle">Have questions about our courses, admissions, or career support? Reach out to us through any of these channels.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-card" data-aos="fade-up" data-aos-delay="0">
+      <div class="contact-icon ci1"><i class="fas fa-map-marker-alt"></i></div>
+      <h3>Our Location</h3>
+      <p>Office NO. 26, Ground Floor, Heena Arcade, Swami Vivekanand Road, Jogeshwari West, Mumbai, Maharashtra, 400102</p>
+    </div>
+    <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="contact-icon ci2"><i class="fas fa-phone-alt"></i></div>
+      <h3>Phone Number</h3>
+      <p><a href="tel:+919987422429">+91 9987422429</a><br><small>Mon–Sat, 9am–7pm</small></p>
+    </div>
+    <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="contact-icon ci3"><i class="fas fa-envelope"></i></div>
+      <h3>Email Address</h3>
+      <p><a href="mailto:academyindia11@gmail.com">academyindia11@gmail.com</a></p>
+    </div>
+    <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="contact-icon ci4"><i class="fas fa-globe"></i></div>
+      <h3>Website</h3>
+      <p><a href="#">www.academyindia.com</a><br><small>24/7 Online Portal</small></p>
+    </div>
+  </div>
+
+  <div class="timing-section" data-aos="fade-up" data-aos-delay="100">
+    <div class="text-center" style="margin-bottom:8px;">
+      <div class="section-tag">🕐 Business Hours</div>
+      <h3 class="section-title" style="font-size:1.5rem;">When Can You Reach Us?</h3>
+    </div>
+    <div class="timing-grid">
+      <div class="timing-item"><div class="day">Monday</div><div class="time">9:00 AM – 7:00 PM</div></div>
+      <div class="timing-item"><div class="day">Tuesday</div><div class="time">9:00 AM – 7:00 PM</div></div>
+      <div class="timing-item"><div class="day">Wednesday</div><div class="time">9:00 AM – 7:00 PM</div></div>
+      <div class="timing-item"><div class="day">Thursday</div><div class="time">9:00 AM – 7:00 PM</div></div>
+      <div class="timing-item"><div class="day">Friday</div><div class="time">9:00 AM – 7:00 PM</div></div>
+      <div class="timing-item"><div class="day">Saturday</div><div class="time">9:00 AM – 7:00 PM</div></div>
+      <div class="timing-item"><div class="day">Sunday</div><div class="time" style="color:#ef4444;">Closed</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM SECTION -->
+<section class="form-section" id="contact-form">
+  <div class="form-wrapper">
+    <div class="form-info" data-aos="fade-right">
+      <div class="section-tag">✉️ Send a Message</div>
+      <h2 class="section-title">Let's Start Your<br><span style="background:var(--grad2);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Success Story</span></h2>
+      <p>Fill out the form and our team will get back to you within 24 hours. We're excited to help you take the next step in your digital journey.</p>
+      <div class="form-highlight">
+        <h4>⚡ Fast Response Guarantee</h4>
+        <p>We respond to all inquiries within 24 hours. Urgent? Call us directly!</p>
+      </div>
+      <div class="form-highlight" style="border-left-color:#06b6d4;">
+        <h4>🎓 Free Career Consultation</h4>
+        <p>Get a free 30-minute career counselling session with every inquiry.</p>
+      </div>
+      <div class="form-highlight" style="border-left-color:#ec4899;">
+        <h4>🌟 Join 12,000+ Learners</h4>
+        <p>Become part of our thriving community of digital professionals.</p>
+      </div>
+    </div>
+    <div class="contact-form" data-aos="fade-left">
+      <h3 style="font-size:1.4rem;font-weight:800;margin-bottom:8px;color:#1e1b4b;">Send Us a Message</h3>
+      <p style="color:#9ca3af;font-size:0.85rem;margin-bottom:28px;">All fields marked * are required</p>
+      <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" id="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" id="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="phone" placeholder="+1 (234) 567-8900" required>
+          </div>
+          <div class="form-group">
+            <label>Course Interest *</label>
+            <select id="course" required>
+              <option value="">Select a course...</option>
+              <option>Web Development</option>
+              <option>Data Science & AI</option>
+              <option>Digital Marketing</option>
+              <option>UI/UX Design</option>
+              <option>Cybersecurity</option>
+              <option>Cloud Computing</option>
+              <option>Mobile App Development</option>
+              <option>Machine Learning</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Your Message *</label>
+          <textarea id="message" placeholder="Tell us about your goals, questions, or anything you'd like to know..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">
+          🚀 Send Message — Let's Talk!
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER SECTION -->
+<section class="career-section" id="careers">
+  <div class="text-center" data-aos="fade-up">
+    <div class="section-tag">🎯 Career Support</div>
+    <h2 class="section-title">How We Help Students<br><span style="background:var(--grad3);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Build Careers</span></h2>
+    <p class="section-subtitle">We don't just teach skills — we build careers. Our end-to-end support system ensures every student lands their dream job.</p>
+  </div>
+  <div class="career-grid">
+    <div class="career-card" data-aos="fade-up" data-aos-delay="0">
+      <div class="career-icon cci1"><i class="fas fa-tools"></i></div>
+      <h3>Industry-Ready Skills</h3>
+      <p>Curriculum designed with top tech companies. Learn tools and technologies that employers actually use in production environments.</p>
+    </div>
+    <div class="career-card" data-aos="fade-up" data-aos-delay="80">
+      <div class="career-icon cci2"><i class="fas fa-building"></i></div>
+      <h3>Internship Support</h3>
+      <p>Get connected to 200+ partner companies for paid internships. Real work experience before you even graduate.</p>
+    </div>
+    <div class="career-card" data-aos="fade-up" data-aos-delay="160">
+      <div class="career-icon cci3"><i class="fas fa-handshake"></i></div>
+      <h3>Placement Assistance</h3>
+      <p>95% placement rate. Our dedicated placement team works tirelessly to match you with the right employer.</p>
+    </div>
+    <div class="career-card" data-aos="fade-up" data-aos-delay="240">
+      <div class="career-icon cci4"><i class="fas fa-file-alt"></i></div>
+      <h3>Resume Building</h3>
+      <p>Professional resume reviews, ATS optimization, LinkedIn profile enhancement, and personal branding support.</p>
+    </div>
+    <div class="career-card" data-aos="fade-up" data-aos-delay="320">
+      <div class="career-icon cci5"><i class="fas fa-comments"></i></div>
+      <h3>Interview Preparation</h3>
+      <p>Mock interviews with industry veterans, technical coding challenges, HR round practice, and real-time feedback.</p>
+    </div>
+    <div class="career-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="career-icon cci6"><i class="fas fa-laptop-code"></i></div>
+      <h3>Live Projects</h3>
+      <p>Work on real client projects during the course. Build a portfolio that stands out and proves your skills to employers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM SECTION -->
+<section class="team-section" id="team">
+  <div class="text-center" data-aos="fade-up">
+    <div class="section-tag">👥 Our Mentors</div>
+    <h2 class="section-title">Meet the <span style="background:var(--grad1);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Expert Team</span></h2>
+    <p class="section-subtitle">Learn from industry veterans with years of real-world experience at top tech companies worldwide.</p>
+  </div>
+  <div class="team-grid">
+    <div class="team-card" data-aos="fade-up" data-aos-delay="0">
+      <div style="position:relative;width:90px;margin:0 auto 18px;">
+        <div class="team-avatar ta1">AK</div>
+        <div class="team-ring"></div>
+      </div>
+      <h3>Alex Kumar</h3>
+      <div class="team-pos">Lead Web Developer</div>
+      <div class="team-skills">
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">AWS</span>
+      </div>
+      <div class="team-social">
+        <a href="#" class="ts-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="ts-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="ts-icon"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+      <div style="position:relative;width:90px;margin:0 auto 18px;">
+        <div class="team-avatar ta2">SR</div>
+        <div class="team-ring"></div>
+      </div>
+      <h3>Sarah Rodriguez</h3>
+      <div class="team-pos">AI & Data Science Expert</div>
+      <div class="team-skills">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">ML</span>
+      </div>
+      <div class="team-social">
+        <a href="#" class="ts-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="ts-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="ts-icon"><i class="fas fa-globe"></i></a>
+      </div>
+    </div>
+    <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+      <div style="position:relative;width:90px;margin:0 auto 18px;">
+        <div class="team-avatar ta3">MP</div>
+        <div class="team-ring"></div>
+      </div>
+      <h3>Maya Patel</h3>
+      <div class="team-pos">UI/UX Design Lead</div>
+      <div class="team-skills">
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Adobe XD</span>
+        <span class="skill-tag">CSS</span>
+      </div>
+      <div class="team-social">
+        <a href="#" class="ts-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="ts-icon"><i class="fab fa-dribbble"></i></a>
+        <a href="#" class="ts-icon"><i class="fab fa-behance"></i></a>
+      </div>
+    </div>
+    <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+      <div style="position:relative;width:90px;margin:0 auto 18px;">
+        <div class="team-avatar ta4">JL</div>
+        <div class="team-ring"></div>
+      </div>
+      <h3>James Liu</h3>
+      <div class="team-pos">Digital Marketing Head</div>
+      <div class="team-skills">
+        <span class="skill-tag">SEO</span>
+        <span class="skill-tag">Google Ads</span>
+        <span class="skill-tag">Analytics</span>
+      </div>
+      <div class="team-social">
+        <a href="#" class="ts-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="ts-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="ts-icon"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL SECTION -->
+<section class="social-section" id="social">
+  <div class="text-center" data-aos="fade-up">
+    <div class="section-tag">🌐 Community</div>
+    <h2 class="section-title">Connect With Our<br><span style="background:var(--grad5);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Digital Community</span></h2>
+    <p class="section-subtitle">Join our vibrant community of 50,000+ learners and professionals across all social platforms.</p>
+  </div>
+  <div class="social-grid" data-aos="fade-up" data-aos-delay="100">
+    <a href="#" class="social-card sc-fb">
+      <i class="fab fa-facebook-f"></i>
+      <span>Facebook</span>
+    </a>
+    <a href="#" class="social-card sc-ig">
+      <i class="fab fa-instagram"></i>
+      <span>Instagram</span>
+    </a>
+    <a href="#" class="social-card sc-li">
+      <i class="fab fa-linkedin-in"></i>
+      <span>LinkedIn</span>
+    </a>
+    <a href="#" class="social-card sc-yt">
+      <i class="fab fa-youtube"></i>
+      <span>YouTube</span>
+    </a>
+    <a href="#" class="social-card sc-tw">
+      <i class="fab fa-twitter"></i>
+      <span>Twitter</span>
+    </a>
+  </div>
+</section>
+
+<!-- MAP SECTION -->
+<section class="map-section" id="location">
+  <div class="text-center" data-aos="fade-up">
+    <div class="section-tag">📍 Find Us</div>
+    <h2 class="section-title">Visit Our <span style="background:var(--grad3);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Campus</span></h2>
+  </div>
+  <div class="map-wrapper">
+    <div class="map-info" data-aos="fade-right">
+      <h3>Digital Academy HQ</h3>
+      <p>Conveniently located in the heart of Tech Park, easily accessible by public transit and private vehicle. Free parking available on campus.</p>
+      <div class="map-detail"><i class="fas fa-map-marker-alt"></i><span>Office NO. 26, Ground Floor, Heena Arcade, Swami Vivekanand Road, Jogeshwari West, Mumbai, Maharashtra, 400102</span></div>
+      <div class="map-detail"><i class="fas fa-parking"></i><span>Free campus parking available</span></div>
+      <a href="https://maps.app.goo.gl/uNiPMXJT9bVPUZt99" target="_blank" class="directions-btn">
+        <i class="fas fa-directions"></i> Get Directions
+      </a>
+    </div>
+    <div class="map-container" data-aos="fade-left">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7476592.057647501!2d69.90065172142602!3d23.794417015246303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x27481c0aa196c41%3A0xd5bc290380c34ebd!2sAcademyINDIA%20Computer%20Institute%20%7C%20Best%20Computer%20Institute%20Jogeshwari%2C%20Office%20No.26%2C%20Ground%20Floor%2C%20Swami%20Vivekanand%20Rd%2C%20beside%20Dewan%20Center%2C%20near%20Railway%20Stn%2C%20Momin%20Nagar%2C%20Jogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400102!3m2!1d19.136559!2d72.8476558!5e0!3m2!1sen!2sin!4v1779307560375!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="faq-section" id="faq">
+  <div class="text-center" data-aos="fade-up">
+    <div class="section-tag">❓ FAQ</div>
+    <h2 class="section-title">Frequently Asked <span style="background:var(--grad1);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Questions</span></h2>
+    <p class="section-subtitle">Everything you need to know about our academy, courses, and career support programs.</p>
+  </div>
+  <div class="faq-container">
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="0">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        <h4>What courses does Digital Academy offer?</h4>
+        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+      </div>
+      <div class="faq-answer"><p>We offer a wide range of in-demand tech courses including Web Development, Data Science & AI, Digital Marketing, UI/UX Design, Cybersecurity, Cloud Computing, and Mobile App Development. All courses are taught by industry experts and are updated regularly to match market demands.</p></div>
+    </div>
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="60">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        <h4>Do I need prior experience to enroll?</h4>
+        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+      </div>
+      <div class="faq-answer"><p>No prior experience is required for most of our beginner programs. We have courses tailored for complete beginners through to advanced professionals. Our team will assess your background and recommend the best starting point for your goals.</p></div>
+    </div>
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="120">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        <h4>What is the duration of your courses?</h4>
+        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+      </div>
+      <div class="faq-answer"><p>Course durations vary from 3 months for focused skills courses to 12 months for comprehensive career programs. We offer both full-time (intensive) and part-time (flexible) schedules to accommodate working professionals and students.</p></div>
+    </div>
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="180">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        <h4>How does your placement assistance work?</h4>
+        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+      </div>
+      <div class="faq-answer"><p>Our dedicated placement team maintains partnerships with 200+ companies. We provide resume reviews, mock interviews, LinkedIn optimization, and direct referrals. Our 95% placement rate reflects our commitment. Support continues for 6 months post-graduation.</p></div>
+    </div>
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="240">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        <h4>Are online and offline classes available?</h4>
+        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+      </div>
+      <div class="faq-answer"><p>Yes! We offer both in-person classes at our campus and live online sessions. Our hybrid model lets you attend from anywhere while still benefiting from real-time interaction with mentors and peers. All sessions are recorded for later review.</p></div>
+    </div>
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        <h4>What financing options are available?</h4>
+        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+      </div>
+      <div class="faq-answer"><p>We offer flexible payment plans, EMI options (0% interest for 12 months), scholarships for deserving students, and Income Share Agreements (ISA) where you pay only after getting placed. Early enrollment discounts are also available throughout the year.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- footer  -->
+ <section class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <div class="fot-logo">
+        ACADEMY INDIA
+      </div>
+      <p>India's premier digital creative academy helping students build outstanding careers in UI/UX Design, Full Stack Development, and Artificial Intelligence.</p>
+     <div class="footer-icon">
+       <a class="social-btn" href="#">in</a>
+          <a class="social-btn" href="#">𝕏</a>
+          <a class="social-btn" href="#">f</a>
+          <a class="social-btn" href="#">▶</a>
+     </div>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <div class="links">
+         <li><a href="/index.html">HOME</a></li>
+          <li><a href="/pages/about.html">ABOUT</a></li>
+          <li><a href="/pages/career.html">CAREER</a></li>
+          <li><a href="/pages/placement.html">PLACEMENTS</a></li>
+          <li><a href="/pages/contact-us.html">CONTACT US</a></li>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Digital Skills</h5>
+      <div class="links">
+          <li><a href="/pages/pragramming-dev.html">PROGRAMING & DEVELOPMENT</a></li>
+          <li><a href="/pages/data&ai.html">DATA & AI</a></li>
+          <li><a href="/pages/design&multi-media.html">DESIGN & MULTIMEDIA</a></li>
+          <li><a href="/pages/digital-skills.html">DIGITAL SKILLS</a></li>
+          <li><a href="/pages/digital-skills.html">ARTIFIAL INTELLIGENCE</a></li>
+      </div>
+
+    </div>
+    <div class="footer-col">
+      <h5>Address</h5>
+      <p>📍 Office NO. 26, Ground Floor, Heena Arcade, Swami Vivekanand Road, Jogeshwari West, Mumbai, Maharashtra, 400102</p>
+       <a href="tel:919987422429"><p style="">📞 +91 99874 22429</p></a>
+       <a href="https://wa.me/919987422429"><p style="">📩 +91 99874 22429</p></a>
+     
+    </div>
+  </div>
+
+ </section>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <div class="toast-icon">✅</div>
+  <div>
+    <h5>Message Sent!</h5>
+    <p>We'll get back to you within 24 hours.</p>
+  </div>
+</div>
+
+<!-- BACK TO TOP -->
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+ <!-- nav -->
+     <script>
+        // ========== NAVBAR SCROLL EFFECT ==========
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                navbar.classList.remove('glass');
+            } else {
+                navbar.classList.remove('scrolled');
+                navbar.classList.add('glass');
+            }
+        });
+        
+        // Initialize glass effect
+        if (window.scrollY <= 50) {
+            navbar.classList.add('glass');
+        }
+
+        // ========== MOBILE MENU TOGGLE ==========
+        const hamburger = document.getElementById('hamburger');
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const overlay = document.getElementById('overlay');
+        
+        function openMobileMenu() {
+            hamburger.classList.add('active');
+            mobileSidebar.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenu() {
+            hamburger.classList.remove('active');
+            mobileSidebar.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        hamburger.addEventListener('click', openMobileMenu);
+        overlay.addEventListener('click', closeMobileMenu);
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.id !== 'mobileCoursesBtn') {
+                    closeMobileMenu();
+                }
+            });
+        });
+        
+        // ========== MOBILE ACCORDION DROPDOWN ==========
+        const mobileCoursesBtn = document.getElementById('mobileCoursesBtn');
+        const mobileCoursesDropdown = document.getElementById('mobileCoursesDropdown');
+        const mobileCoursesIcon = document.getElementById('mobileCoursesIcon');
+        
+        mobileCoursesBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            mobileCoursesDropdown.classList.toggle('active');
+            mobileCoursesIcon.style.transform = mobileCoursesDropdown.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+        });
+        
+        // ========== ACTIVE LINK HIGHLIGHTING ==========
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+        
+        function updateActiveLink() {
+            let current = '';
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    current = sectionId;
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href');
+                if (href && href === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+            
+            mobileLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && href === `#${current}`) {
+                    link.style.color = '#667eea';
+                } else if (link.id !== 'mobileCoursesBtn') {
+                    link.style.color = '';
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveLink);
+        window.addEventListener('load', updateActiveLink);
+        
+        // ========== SMOOTH SCROLL ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    const navHeight = navbar.offsetHeight;
+                    const targetPosition = target.offsetTop - navHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // ========== PREVENT DROPDOWN CLOSE ON CLICK ==========
+        const megaDropdown = document.querySelector('.mega-dropdown');
+        if (megaDropdown) {
+            megaDropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        }
+        
+        // ========== CLOSE MOBILE MENU ON RESIZE ==========
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 900) {
+                closeMobileMenu();
+            }
+        });
+        
+        console.log('✅ Premium Navbar Loaded Successfully!');
+    </script>
+
+<script>
+  // ===== AOS INIT =====
+  AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 60 });
+
+
+  // ===== PARTICLES =====
+  function createParticles() {
+    const container = document.getElementById('particles');
+    const colors = ['rgba(124,58,237,0.3)','rgba(37,99,235,0.3)','rgba(6,182,212,0.3)','rgba(236,72,153,0.3)','rgba(249,115,22,0.3)'];
+    for (let i = 0; i < 20; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      const size = Math.random() * 8 + 4;
+      p.style.cssText = `
+        width:${size}px; height:${size}px;
+        background:${colors[Math.floor(Math.random()*colors.length)]};
+        left:${Math.random()*100}%;
+        animation-duration:${Math.random()*15+10}s;
+        animation-delay:${Math.random()*10}s;
+      `;
+      container.appendChild(p);
+    }
+  }
+  createParticles();
+
+  // ===== COUNTER ANIMATION =====
+  function animateCounters() {
+    document.querySelectorAll('[data-count]').forEach(el => {
+      const target = parseInt(el.getAttribute('data-count'));
+      const suffix = target > 100 ? '+' : (target === 95 ? '%' : '+');
+      let current = 0;
+      const step = target / 60;
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = Math.floor(current).toLocaleString() + suffix;
+      }, 30);
+    });
+  }
+  const statsObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { animateCounters(); statsObserver.disconnect(); } });
+  }, { threshold: 0.3 });
+  const statsBar = document.querySelector('.stats-bar');
+  if (statsBar) statsObserver.observe(statsBar);
+
+  // ===== FAQ TOGGLE =====
+  function toggleFaq(question) {
+    const item = question.parentElement;
+    const isActive = item.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+    if (!isActive) item.classList.add('active');
+  }
+
+  // ===== FORM SUBMIT =====
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = document.querySelector('.submit-btn');
+    btn.textContent = '⏳ Sending...';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.textContent = '✅ Message Sent!';
+      btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+      showToast();
+      document.getElementById('contactForm').reset();
+      setTimeout(() => {
+        btn.textContent = '🚀 Send Message — Let\'s Talk!';
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3000);
+    }, 1800);
+  }
+
+  function showToast() {
+    const t = document.getElementById('toast');
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 4000);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Academy - Placement Portal</title>
+ <link rel="stylesheet" href="/css/1.css">
+ <link rel="stylesheet" href="/css/placement.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+
+
+<base target="_blank">
+</head>
+<body>
+
+  <!-- Navbar -->
+     <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span class="logo-text">DigitalAcademy</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <div class="nav-item">
+                    <a href="/index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/about.html" class="nav-link">
+                        <i class="fas fa-info-circle"></i> About
+                    </a>
+                </div>
+                
+                <!-- Courses Mega Dropdown -->
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-book-open"></i> All Courses <i class="fas fa-chevron-down"></i>
+                    </a>
+                    
+                    <div class="mega-dropdown">
+                        <div class="dropdown-grid">
+                            <!-- Programming & Development -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-code"></i> Programming & Development</h4>
+                                <ul>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fab fa-python"></i> Python</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fab fa-java"></i> Java</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fas fa-code"></i> C / C++</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fas fa-layer-group"></i> Full Stack Development</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fab fa-js"></i> JavaScript</a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Data & AI -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-chart-line"></i> Data & AI</h4>
+                                <ul>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-database"></i> Data Science</a></li>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-brain"></i> Machine Learning</a></li>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-microchip"></i> Deep Learning</a></li>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-robot"></i> Artificial Intelligence</a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Design & Multimedia -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-paint-brush"></i> Design & Multimedia</h4>
+                                <ul>
+                                    <li><a href="/pages/design&multi-media.html"><i class="fas fa-pen-fancy"></i> UI/UX Design</a></li>
+                                    <li><a href="/pages/design&multi-media.html"><i class="fas fa-palette"></i> Graphic Design</a></li>
+                                    <li><a href="design&multi-media.html"><i class="fas fa-video"></i> Video Editing</a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Digital Skills -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-chart-simple"></i> Digital Skills</h4>
+                                <ul>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-chart-simple"></i> Digital Marketing</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-search"></i> SEO</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fab fa-facebook"></i> Social Media Marketing</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-pen-fancy"></i> Content Writing</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-briefcase"></i> Freelancing Skills</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                <div class="nav-item">
+                    <a href="/pages/career.html" class="nav-link"><i class="fas fa-briefcase"></i> Careers</a>
+                </div>
+               
+                <div class="nav-item">
+                    <a href="/pages/success-stories.html" class="nav-link"><i class="fas fa-star"></i> Success Stories</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/placement.html" class="nav-link"><i class="fas fa-user-tie"></i> Placements</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/contact-us.html" class="nav-link btn-enroll"><i class="fas fa-address-book"></i> Contact</a>
+                </div>
+                
+              
+                
+                
+            </div>
+            
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <a href="/index.html" class="mobile-nav-link">🏠 Home</a>
+            <a href="/pages/about.html" class="mobile-nav-link">ℹ️ About</a>
+            
+            <!-- Mobile Courses Accordion -->
+            <div>
+                <div class="mobile-nav-link" id="mobileCoursesBtn" style="cursor: pointer;">
+                    📚 All Courses <i class="fas fa-chevron-down" id="mobileCoursesIcon"></i>
+                </div>
+                <div class="mobile-dropdown-content" id="mobileCoursesDropdown">
+                    <div class="mobile-dropdown-category">
+                        <h4>💻 Programming & Development</h4>
+                        <a href="/pages/pragramming-dev.html"><i class="fab fa-python"></i> Python</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fab fa-java"></i> Java</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fas fa-code"></i> C / C++</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fab fa-js"></i> JavaScript</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fas fa-layer-group"></i> Full Stack Development</a>
+                    </div>
+                    <div class="mobile-dropdown-category">
+                        <h4>📊 Data & AI</h4>
+                        <a href="/pages/data&ai.html"><i class="fas fa-database"></i> Data Science</a>
+                        <a href="/pages/data&ai.html"><i class="fas fa-brain"></i> Machine Learning</a>
+                        <a href="/pages/data&ai.html"><i class="fas fa-microchip"></i> Deep Learning</a>
+                        <a href="/pages/data&ai.html"><i class="fas fa-robot"></i> Artificial Intelligence</a>
+                    </div>
+                    <div class="mobile-dropdown-category">
+                        <h4>🎨 Design & Multimedia</h4>
+                        <a href="/pages/design&multi-media.html"><i class="fas fa-pen-fancy"></i> UI/UX Design</a>
+                        <a href="/pages/design&multi-media.html"><i class="fas fa-palette"></i> Graphic Design</a>
+                        <a href="/pages/design&multi-media.html"><i class="fas fa-video"></i> Video Editing</a>
+                    </div>
+                    <div class="mobile-dropdown-category">
+                        <h4>📈 Digital Skills</h4>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-chart-simple"></i> Digital Marketing</a>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-search"></i> SEO</a>
+                        <a href="/pages/digital-skills.html"><i class="fab fa-facebook"></i> Social Media Marketing</a>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-pen-fancy"></i> Content Writing</a>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-briefcase"></i> Freelancing Skills</a>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="/pages/career.html" class="mobile-nav-link">💼 Careers</a>
+             <a href="/pages/success-stories.html" class="mobile-nav-link">⭐ Success Stories</a>
+            <a href="/pages/placement.html" class="mobile-nav-link">💼 Placements</a>
+           
+            <div style="margin-top: 1rem;">
+                <a href="/pages/contact-us.html" class="mobile-nav-link" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; justify-content: center;font-size: 1.2em;">
+                    📞 Contact
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Floating Blobs -->
+<div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div><div class="blob blob-4"></div>
+
+<!-- ===== 2. HERO ===== -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-left">
+            <h1>Get Placed in <span class="gradient-text">Top Companies</span> With <br><span class="typing-text" id="typingText"></span></h1>
+            <p class="hero-subtitle">Master modern digital skills through practical training, live projects, interview preparation, and career mentorship designed for real placements.</p>
+            <div class="hero-buttons">
+                <a href="/pages/design&multi-media.html" class="btn btn-secondary">Explore Courses</a>
+                <a href="/pages/contact-us.html" class="btn btn-secondary">Start Your Career</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="dashboard-mockup">
+                <div class="dash-header"><div class="dash-dots"><div class="dash-dot"></div><div class="dash-dot"></div><div class="dash-dot"></div></div><span class="dash-title">Placement Dashboard</span></div>
+                <div class="dash-chart"></div>
+                <div class="dash-stats">
+                    <div class="dash-stat"><div class="dash-stat-value">50K+</div><div class="dash-stat-label">Students Trained</div></div>
+                    <div class="dash-stat"><div class="dash-stat-value">8K+</div><div class="dash-stat-label">Placements</div></div>
+                    <div class="dash-stat"><div class="dash-stat-value">500+</div><div class="dash-stat-label">Hiring Partners</div></div>
+                    <div class="dash-stat"><div class="dash-stat-value">4.9</div><div class="dash-stat-label">Student Rating</div></div>
+                </div>
+            </div>
+            <div class="floating-cards">
+                <div class="float-card"><div class="float-icon blue">🎓</div><div class="float-info"><h4>50,000+</h4><p>Students Trained</p></div></div>
+                <div class="float-card"><div class="float-icon pink">💼</div><div class="float-info"><h4>8,000+</h4><p>Successful Placements</p></div></div>
+                <div class="float-card"><div class="float-icon orange">🏆</div><div class="float-info"><h4>500+</h4><p>Hiring Companies</p></div></div>
+                <div class="float-card"><div class="float-icon cyan">⭐</div><div class="float-info"><h4>4.9/5</h4><p>Student Rating</p></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== 3. COMPANIES ===== -->
+<section class="companies-section reveal">
+    <div class="section-header"><h2>Our Students Are Working At</h2><p>Join the ranks of professionals placed at leading global companies</p></div>
+    <div class="companies-marquee"><div class="companies-track" id="companiesTrack"></div></div>
+</section>
+
+<!-- ===== 4. SALARY ===== -->
+<section class="salary-section reveal">
+    <div class="section-header"><h2>Students Achieving High Salary Packages</h2><p>Real success stories from our placed students across top roles</p></div>
+    <div class="salary-grid" id="salaryGrid"></div>
+</section>
+
+<!-- ===== 5. GALLERY ===== -->
+<section class="gallery-section reveal" style="display: none;">
+    <div class="section-header"><h2>Placement & Campus Moments</h2><p>Capturing the journey from learning to placement success</p></div>
+    <div class="gallery-swiper swiper" id="gallerySwiper">
+        <div class="swiper-wrapper" id="galleryWrapper"></div>
+        <div class="swiper-button-next"></div><div class="swiper-button-prev"></div><div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- ===== 6. PROGRAMS ===== -->
+<section class="programs-section reveal" id="programs">
+    <div class="section-header"><h2>Top Placement-Focused Programs</h2><p>Industry-aligned courses designed to get you hired</p></div>
+    <div class="programs-track-wrapper"><div class="programs-track" id="programsTrack"></div></div>
+</section>
+
+<!-- ===== 7. PLACEMENTS ===== -->
+<section class="placements-section reveal" id="placements">
+    <div class="section-header"><h2>Recent Student Placements</h2><p>Hear from our students who transformed their careers</p></div>
+    <div class="placements-swiper swiper" id="placementsSwiper">
+        <div class="swiper-wrapper" id="placementsWrapper"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- ===== 8. PROCESS ===== -->
+<section class="process-section reveal">
+    <div class="section-header"><h2>How We Help You Get Placed</h2><p>A structured path from skill development to your dream job</p></div>
+    <div class="process-timeline" id="processTimeline"></div>
+</section>
+
+<!-- ===== 9. CTA ===== -->
+<section class="cta-section" id="cta">
+    <div class="cta-bg"></div>
+    <div class="cta-particles" id="ctaParticles"></div>
+    <div class="cta-content">
+        <h2>Your Dream Placement Is One Step Away</h2>
+        <p>Join our placement-focused digital programs and become industry-ready with hands-on training and dedicated career support.</p>
+        <div class="cta-buttons">
+            <a href="#" class="cta-btn cta-btn-white">Enroll Now</a>
+            <a href="/pages/contact-us.html" class="cta-btn cta-btn-outline">Contact Placement Team</a>
+        </div>
+    </div>
+</section>
+
+<!-- footer  -->
+ <section class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <div class="fot-logo">
+        ACADEMY INDIA
+      </div>
+      <p>India's premier digital creative academy helping students build outstanding careers in UI/UX Design, Full Stack Development, and Artificial Intelligence.</p>
+     <div class="footer-icon">
+       <a class="social-btn" href="#">in</a>
+          <a class="social-btn" href="#">𝕏</a>
+          <a class="social-btn" href="#">f</a>
+          <a class="social-btn" href="#">▶</a>
+     </div>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <div class="links">
+         <li><a href="/index.html">HOME</a></li>
+          <li><a href="/pages/about.html">ABOUT</a></li>
+          <li><a href="/pages/career.html">CAREER</a></li>
+          <li><a href="/pages/placement.html">PLACEMENTS</a></li>
+          <li><a href="/pages/contact-us.html">CONTACT US</a></li>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Digital Skills</h5>
+      <div class="links">
+          <li><a href="/pages/pragramming-dev.html">PROGRAMING & DEVELOPMENT</a></li>
+          <li><a href="/pages/data&ai.html">DATA & AI</a></li>
+          <li><a href="/pages/design&multi-media.html">DESIGN & MULTIMEDIA</a></li>
+          <li><a href="/pages/digital-skills.html">DIGITAL SKILLS</a></li>
+          <li><a href="/pages/digital-skills.html">ARTIFIAL INTELLIGENCE</a></li>
+      </div>
+
+    </div>
+    <div class="footer-col">
+      <h5>Address</h5>
+      <p>📍 Office NO. 26, Ground Floor, Heena Arcade, Swami Vivekanand Road, Jogeshwari West, Mumbai, Maharashtra, 400102</p>
+       <a href="tel:919987422429"><p style="">📞 +91 99874 22429</p></a>
+       <a href="https://wa.me/919987422429"><p style="">📩 +91 99874 22429</p></a>
+     
+    </div>
+  </div>
+
+ </section>
+
+ <!-- nav -->
+     <script>
+        // ========== NAVBAR SCROLL EFFECT ==========
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                navbar.classList.remove('glass');
+            } else {
+                navbar.classList.remove('scrolled');
+                navbar.classList.add('glass');
+            }
+        });
+        
+        // Initialize glass effect
+        if (window.scrollY <= 50) {
+            navbar.classList.add('glass');
+        }
+
+        // ========== MOBILE MENU TOGGLE ==========
+        const hamburger = document.getElementById('hamburger');
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const overlay = document.getElementById('overlay');
+        
+        function openMobileMenu() {
+            hamburger.classList.add('active');
+            mobileSidebar.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenu() {
+            hamburger.classList.remove('active');
+            mobileSidebar.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        hamburger.addEventListener('click', openMobileMenu);
+        overlay.addEventListener('click', closeMobileMenu);
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.id !== 'mobileCoursesBtn') {
+                    closeMobileMenu();
+                }
+            });
+        });
+        
+        // ========== MOBILE ACCORDION DROPDOWN ==========
+        const mobileCoursesBtn = document.getElementById('mobileCoursesBtn');
+        const mobileCoursesDropdown = document.getElementById('mobileCoursesDropdown');
+        const mobileCoursesIcon = document.getElementById('mobileCoursesIcon');
+        
+        mobileCoursesBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            mobileCoursesDropdown.classList.toggle('active');
+            mobileCoursesIcon.style.transform = mobileCoursesDropdown.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+        });
+        
+        // ========== ACTIVE LINK HIGHLIGHTING ==========
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+        
+        function updateActiveLink() {
+            let current = '';
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    current = sectionId;
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href');
+                if (href && href === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+            
+            mobileLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && href === `#${current}`) {
+                    link.style.color = '#667eea';
+                } else if (link.id !== 'mobileCoursesBtn') {
+                    link.style.color = '';
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveLink);
+        window.addEventListener('load', updateActiveLink);
+        
+        // ========== SMOOTH SCROLL ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    const navHeight = navbar.offsetHeight;
+                    const targetPosition = target.offsetTop - navHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // ========== PREVENT DROPDOWN CLOSE ON CLICK ==========
+        const megaDropdown = document.querySelector('.mega-dropdown');
+        if (megaDropdown) {
+            megaDropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        }
+        
+        // ========== CLOSE MOBILE MENU ON RESIZE ==========
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 900) {
+                closeMobileMenu();
+            }
+        });
+        
+        console.log('✅ Premium Navbar Loaded Successfully!');
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+// Typing Animation
+const words=['Success','Placement','Career','Skills','Future'];
+let wordIndex=0,charIndex=0,isDeleting=false;
+const typingElement=document.getElementById('typingText');
+function typeEffect(){
+    const currentWord=words[wordIndex];
+    if(isDeleting){typingElement.textContent=currentWord.substring(0,charIndex-1);charIndex--;}
+    else{typingElement.textContent=currentWord.substring(0,charIndex+1);charIndex++;}
+    let typeSpeed=isDeleting?80:150;
+    if(!isDeleting&&charIndex===currentWord.length){typeSpeed=2000;isDeleting=true;}
+    else if(isDeleting&&charIndex===0){isDeleting=false;wordIndex=(wordIndex+1)%words.length;typeSpeed=500;}
+    setTimeout(typeEffect,typeSpeed);
+}
+typeEffect();
+
+// Companies Marquee
+const companies=['Hitachi','HDFC','Justdial','Deloitte','HCL','Infosys','TCS','Wipro','IBM','Capgemini','Accenture','Tech Mahindra','Cognizant','Amazon','Google','Microsoft','Zoho','Paytm','Oracle','EY','Dell','Samsung','Flipkart','Reliance','Adobe'];
+const companiesTrack=document.getElementById('companiesTrack');
+[...companies,...companies].forEach(company=>{
+    const card=document.createElement('div');card.className='company-card';card.textContent=company;companiesTrack.appendChild(card);
+});
+
+// Salary Cards
+const salaryData=[
+    {role:'AI Engineer',amount:'18',badge:'ai',badgeText:'AI/ML',name:'Rahul Sharma',course:'AI & Machine Learning',company:'Google'},
+    {role:'DevOps Engineer',amount:'15',badge:'devops',badgeText:'DevOps',name:'Priya Patel',course:'DevOps with AWS',company:'Amazon'},
+    {role:'Full Stack Developer',amount:'12',badge:'fullstack',badgeText:'Full Stack',name:'Amit Kumar',course:'Full Stack Development',company:'Deloitte'},
+    {role:'Data Analyst',amount:'10',badge:'data',badgeText:'Data',name:'Sneha Gupta',course:'Data Analysis',company:'TCS'},
+    {role:'Digital Marketing Specialist',amount:'9',badge:'marketing',badgeText:'Marketing',name:'Vikram Rao',course:'Digital Marketing',company:'Flipkart'},
+    {role:'UI/UX Designer',amount:'8',badge:'uiux',badgeText:'Design',name:'Neha Singh',course:'UI/UX Design',company:'Adobe'}
+];
+const salaryGrid=document.getElementById('salaryGrid');
+salaryData.forEach(item=>{
+    const card=document.createElement('div');card.className='salary-card';
+    card.innerHTML=`<div class="glow-border"></div><span class="salary-badge ${item.badge}">${item.badgeText}</span><div class="salary-amount" data-target="${item.amount}">₹0 LPA</div><div class="salary-role">${item.role}</div><div class="salary-details"><div class="salary-avatar">${item.name.split(' ').map(n=>n[0]).join('')}</div><div class="salary-info"><p>${item.name}</p><p>${item.course} • ${item.company}</p></div></div>`;
+    salaryGrid.appendChild(card);
+});
+
+// Count-up animation
+const salaryObserver=new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.querySelectorAll('.salary-amount').forEach(el=>{
+                const target=parseInt(el.dataset.target);let current=0;
+                const timer=setInterval(()=>{current+=target/50;if(current>=target){current=target;clearInterval(timer);}el.textContent=`₹${Math.floor(current)} LPA`;},30);
+            });
+            salaryObserver.unobserve(entry.target);
+        }
+    });
+},{threshold:0.3});
+salaryObserver.observe(salaryGrid);
+
+// Gallery Slider
+const galleryImages=[
+    {title:'Placement Celebration',desc:'Students celebrating their dream job offers',color:'linear-gradient(135deg,#6366f1,#8b5cf6)'},
+    {title:'Certificate Distribution',desc:'Recognizing excellence and achievement',color:'linear-gradient(135deg,#ec4899,#f472b6)'},
+    {title:'Coding Sessions',desc:'Hands-on programming with expert mentors',color:'linear-gradient(135deg,#06b6d4,#22d3ee)'},
+    {title:'Mock Interviews',desc:'Real interview preparation with industry experts',color:'linear-gradient(135deg,#f97316,#fbbf24)'},
+    {title:'Workshops',desc:'Interactive learning sessions and hackathons',color:'linear-gradient(135deg,#8b5cf6,#a78bfa)'},
+    {title:'Team Activities',desc:'Collaborative projects and team building',color:'linear-gradient(135deg,#10b981,#34d399)'},
+    {title:'Live Classes',desc:'Engaging online sessions with top instructors',color:'linear-gradient(135deg,#ef4444,#f87171)'}
+];
+const galleryWrapper=document.getElementById('galleryWrapper');
+galleryImages.forEach(img=>{
+    const slide=document.createElement('div');slide.className='swiper-slide';
+    slide.innerHTML=`<div class="gallery-slide"><div style="width:100%;height:100%;background:${img.color};display:flex;align-items:center;justify-content:center;"><span style="font-size:4rem;opacity:0.3;">🖼️</span></div><div class="gallery-overlay"><div><h3>${img.title}</h3><p>${img.desc}</p></div></div></div>`;
+    galleryWrapper.appendChild(slide);
+});
+
+new Swiper('#gallerySwiper',{
+    slidesPerView:1,spaceBetween:20,loop:true,autoplay:{delay:3000,disableOnInteraction:false},
+    pagination:{el:'.swiper-pagination',clickable:true},
+    navigation:{nextEl:'.swiper-button-next',prevEl:'.swiper-button-prev'},
+    breakpoints:{768:{slidesPerView:2,spaceBetween:25},1024:{slidesPerView:3,spaceBetween:30}}
+});
+
+// Programs Slider
+const programs=[
+    {icon:'🌐',title:'Web Development',duration:'4 Months',desc:'Master HTML, CSS, JavaScript and modern frameworks to build responsive websites.',color:'blue'},
+    {icon:'⚡',title:'Full Stack Development',duration:'6 Months',desc:'End-to-end development with React, Node.js, databases and cloud deployment.',color:'pink'},
+    {icon:'📊',title:'Data Analysis',duration:'3 Months',desc:'Learn Python, SQL, Excel and visualization tools for data-driven decisions.',color:'green'},
+    {icon:'🐍',title:'Python Programming',duration:'3 Months',desc:'From basics to advanced Python with real-world project applications.',color:'orange'},
+    {icon:'☁️',title:'DevOps with AWS',duration:'5 Months',desc:'CI/CD pipelines, containerization, cloud infrastructure and automation.',color:'purple'},
+    {icon:'📢',title:'Digital Marketing',duration:'3 Months',desc:'SEO, SEM, social media marketing, content strategy and analytics.',color:'cyan'},
+    {icon:'🤖',title:'AI & Machine Learning',duration:'6 Months',desc:'Deep learning, neural networks, NLP and computer vision projects.',color:'blue'},
+    {icon:'🎨',title:'UI/UX Design',duration:'4 Months',desc:'User research, wireframing, prototyping and design systems with Figma.',color:'pink'},
+    {icon:'☕',title:'Java Programming',duration:'4 Months',desc:'Core Java, Spring Boot, microservices and enterprise applications.',color:'green'},
+    {icon:'🔒',title:'Cybersecurity',duration:'5 Months',desc:'Network security, ethical hacking, threat analysis and compliance.',color:'orange'},
+    {icon:'⛅',title:'Cloud Computing',duration:'4 Months',desc:'AWS, Azure, GCP services, architecture and cloud-native development.',color:'purple'},
+    {icon:'⚛️',title:'React & Node.js',duration:'5 Months',desc:'Modern JavaScript stack with React frontend and Node.js backend.',color:'cyan'},
+    {icon:'🛡️',title:'Ethical Hacking',duration:'4 Months',desc:'Penetration testing, vulnerability assessment and security auditing.',color:'blue'},
+    {icon:'📈',title:'Data Science',duration:'6 Months',desc:'Statistics, machine learning, big data processing and visualization.',color:'pink'}
+];
+const programsTrack=document.getElementById('programsTrack');
+[...programs,...programs].forEach(prog=>{
+    const card=document.createElement('div');card.className='program-card';
+    card.innerHTML=`<div class="program-icon ${prog.color}">${prog.icon}</div><h3 class="program-title">${prog.title}</h3><div class="program-meta"><span class="program-tag duration">⏱ ${prog.duration}</span><span class="program-tag placement">✓ Placement</span></div><p class="program-desc">${prog.desc}</p><button class="program-btn">Learn More →</button>`;
+    programsTrack.appendChild(card);
+});
+
+// Placed Students
+const placements=[
+    {name:'Arjun Mehta',initials:'AM',course:'Full Stack Development',company:'Deloitte',salary:'₹12 LPA',quote:'After completing the Full Stack Development program, I got placed at Deloitte with a ₹12 LPA package. The hands-on projects and mock interviews made all the difference.',stars:5},
+    {name:'Ananya Reddy',initials:'AR',course:'Data Science',company:'Amazon',salary:'₹15 LPA',quote:'The Data Science course transformed my career. From basic Python to advanced ML models, every concept was taught with real-world applications. Placed at Amazon!',stars:5},
+    {name:'Karan Singh',initials:'KS',course:'DevOps with AWS',company:'Infosys',salary:'₹10 LPA',quote:'The DevOps training was exceptional. I learned CI/CD, Docker, Kubernetes and AWS services. Within 2 months of course completion, I was placed at Infosys.',stars:5},
+    {name:'Meera Joshi',initials:'MJ',course:'UI/UX Design',company:'Adobe',salary:'₹8 LPA',quote:'The UI/UX program gave me a solid foundation in design thinking and Figma. The portfolio projects helped me crack my interview at Adobe. Highly recommended!',stars:5},
+    {name:'Rohan Verma',initials:'RV',course:'AI & ML',company:'Google',salary:'₹18 LPA',quote:'From neural networks to NLP, the AI course covered everything. The capstone project on computer vision directly helped me land my dream role at Google.',stars:5},
+    {name:'Priya Nair',initials:'PN',course:'Digital Marketing',company:'Flipkart',salary:'₹9 LPA',quote:'The Digital Marketing course was practical and industry-relevant. I learned SEO, SEM, and analytics tools. Got placed at Flipkart within weeks of completing the course.',stars:5}
+];
+const placementsWrapper=document.getElementById('placementsWrapper');
+placements.forEach(p=>{
+    const slide=document.createElement('div');slide.className='swiper-slide';
+    slide.innerHTML=`<div class="placement-card"><div class="placement-header"><div class="placement-avatar">${p.initials}</div><div class="placement-info"><h4>${p.name}</h4><p>${p.course}</p></div></div><div class="placement-stars">${'★'.repeat(p.stars)}${'☆'.repeat(5-p.stars)}</div><div class="placement-quote">"${p.quote}"</div><div class="placement-footer"><span class="placement-company">${p.company}</span><span class="placement-salary">${p.salary}</span></div></div>`;
+    placementsWrapper.appendChild(slide);
+});
+
+new Swiper('#placementsSwiper',{
+    slidesPerView:1,spaceBetween:25,loop:true,autoplay:{delay:4000,disableOnInteraction:false},
+    pagination:{el:'.swiper-pagination',clickable:true},
+    breakpoints:{768:{slidesPerView:2},1024:{slidesPerView:3}}
+});
+
+// Process Timeline
+const processSteps=[
+    {num:1,title:'Skill Training',desc:'Comprehensive training in industry-relevant technologies with hands-on labs and real-world scenarios.'},
+    {num:2,title:'Live Projects',desc:'Work on actual company projects to build a strong portfolio that impresses recruiters.'},
+    {num:3,title:'Resume Building',desc:'Professional resume crafting with ATS optimization and LinkedIn profile enhancement.'},
+    {num:4,title:'Mock Interviews',desc:'Rigorous interview preparation with industry experts covering technical and HR rounds.'},
+    {num:5,title:'Placement Assistance',desc:'Dedicated placement team connects you with 500+ hiring partners and arranges interviews.'},
+    {num:6,title:'Final Interviews',desc:'Crack your dream job with confidence backed by thorough preparation and support.'}
+];
+const processTimeline=document.getElementById('processTimeline');
+processSteps.forEach(step=>{
+    const div=document.createElement('div');div.className='process-step';
+    div.innerHTML=`<div class="process-content"><h3>${step.title}</h3><p>${step.desc}</p></div><div class="process-number">${step.num}</div>`;
+    processTimeline.appendChild(div);
+});
+
+// CTA Particles
+const ctaParticles=document.getElementById('ctaParticles');
+for(let i=0;i<20;i++){
+    const p=document.createElement('div');p.className='particle';
+    p.style.left=Math.random()*100+'%';p.style.animationDelay=Math.random()*15+'s';p.style.animationDuration=(10+Math.random()*10)+'s';
+    ctaParticles.appendChild(p);
+}
+
+// Scroll Reveal
+const revealElements=document.querySelectorAll('.reveal');
+const revealObserver=new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('active');}});
+},{threshold:0.15});
+revealElements.forEach(el=>revealObserver.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Academy India | Premium Learning Platform</title>
+     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/1.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+   
+</head>
+<body>
+
+    <!-- Navbar -->
+     <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span class="logo-text">AcademyIndia</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <div class="nav-item">
+                    <a href="/index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/about.html" class="nav-link">
+                        <i class="fas fa-info-circle"></i> About
+                    </a>
+                </div>
+                
+                <!-- Courses Mega Dropdown -->
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-book-open"></i> All Courses <i class="fas fa-chevron-down"></i>
+                    </a>
+                    
+                    <div class="mega-dropdown">
+                        <div class="dropdown-grid">
+                            <!-- Programming & Development -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-code"></i> Programming & Development</h4>
+                                <ul>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fab fa-python"></i> Python</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fab fa-java"></i> Java</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fas fa-code"></i> C / C++</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fas fa-layer-group"></i> Full Stack Development</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fab fa-js"></i> JavaScript</a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Data & AI -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-chart-line"></i> Data & AI</h4>
+                                <ul>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-database"></i> Data Science</a></li>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-brain"></i> Machine Learning</a></li>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-microchip"></i> Deep Learning</a></li>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-robot"></i> Artificial Intelligence</a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Design & Multimedia -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-paint-brush"></i> Design & Multimedia</h4>
+                                <ul>
+                                    <li><a href="/pages/design&multi-media.html"><i class="fas fa-pen-fancy"></i> UI/UX Design</a></li>
+                                    <li><a href="/pages/design&multi-media.html"><i class="fas fa-palette"></i> Graphic Design</a></li>
+                                    <li><a href="design&multi-media.html"><i class="fas fa-video"></i> Video Editing</a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Digital Skills -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-chart-simple"></i> Digital Skills</h4>
+                                <ul>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-chart-simple"></i> Digital Marketing</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-search"></i> SEO</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fab fa-facebook"></i> Social Media Marketing</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-pen-fancy"></i> Content Writing</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-briefcase"></i> Freelancing Skills</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                <div class="nav-item">
+                    <a href="/pages/career.html" class="nav-link"><i class="fas fa-briefcase"></i> Careers</a>
+                </div>
+               
+                <div class="nav-item">
+                    <a href="/pages/success-stories.html" class="nav-link"><i class="fas fa-star"></i> Success Stories</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/placement.html" class="nav-link"><i class="fas fa-user-tie"></i> Placements</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/contact-us.html" class="nav-link btn-enroll"><i class="fas fa-address-book"></i> Contact</a>
+                </div>
+                
+              
+                
+                
+            </div>
+            
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <a href="/index.html" class="mobile-nav-link">🏠 Home</a>
+            <a href="/pages/about.html" class="mobile-nav-link">ℹ️ About</a>
+            
+            <!-- Mobile Courses Accordion -->
+            <div>
+                <div class="mobile-nav-link" id="mobileCoursesBtn" style="cursor: pointer;">
+                    📚 All Courses <i class="fas fa-chevron-down" id="mobileCoursesIcon"></i>
+                </div>
+                <div class="mobile-dropdown-content" id="mobileCoursesDropdown">
+                    <div class="mobile-dropdown-category">
+                        <h4>💻 Programming & Development</h4>
+                        <a href="/pages/pragramming-dev.html"><i class="fab fa-python"></i> Python</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fab fa-java"></i> Java</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fas fa-code"></i> C / C++</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fab fa-js"></i> JavaScript</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fas fa-layer-group"></i> Full Stack Development</a>
+                    </div>
+                    <div class="mobile-dropdown-category">
+                        <h4>📊 Data & AI</h4>
+                        <a href="/pages/data&ai.html"><i class="fas fa-database"></i> Data Science</a>
+                        <a href="/pages/data&ai.html"><i class="fas fa-brain"></i> Machine Learning</a>
+                        <a href="/pages/data&ai.html"><i class="fas fa-microchip"></i> Deep Learning</a>
+                        <a href="/pages/data&ai.html"><i class="fas fa-robot"></i> Artificial Intelligence</a>
+                    </div>
+                    <div class="mobile-dropdown-category">
+                        <h4>🎨 Design & Multimedia</h4>
+                        <a href="/pages/design&multi-media.html"><i class="fas fa-pen-fancy"></i> UI/UX Design</a>
+                        <a href="/pages/design&multi-media.html"><i class="fas fa-palette"></i> Graphic Design</a>
+                        <a href="/pages/design&multi-media.html"><i class="fas fa-video"></i> Video Editing</a>
+                    </div>
+                    <div class="mobile-dropdown-category">
+                        <h4>📈 Digital Skills</h4>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-chart-simple"></i> Digital Marketing</a>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-search"></i> SEO</a>
+                        <a href="/pages/digital-skills.html"><i class="fab fa-facebook"></i> Social Media Marketing</a>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-pen-fancy"></i> Content Writing</a>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-briefcase"></i> Freelancing Skills</a>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="/pages/career.html" class="mobile-nav-link">💼 Careers</a>
+             <a href="/pages/success-stories.html" class="mobile-nav-link">⭐ Success Stories</a>
+            <a href="/pages/placement.html" class="mobile-nav-link">💼 Placements</a>
+           
+            <div style="margin-top: 1rem;">
+                <a href="/pages/contact-us.html" class="mobile-nav-link" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; justify-content: center;font-size: 1.2em;">
+                    📞 Contact
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+
+<!-- home section -->
+
+<section class="hero">
+  <div class="hero-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="hero-content reveal-left">
+    <div class="hero-badge">
+      <div class="dot"></div>
+      India's #1 Digital Skills Academy
+    </div>
+
+    <h1 class="hero-h1">
+      Build Your Tech Career With<br>
+      <span class="grad">Future-Ready</span>
+      <div class="typewriter-wrap">
+        <span id="typewriter"></span><span class="cursor"></span>
+      </div>
+    </h1>
+
+    <p class="hero-sub">
+      Join India's modern digital academy and learn job-ready skills with real projects, mentorship, certifications, and placement support.
+    </p>
+
+    <div class="hero-actions">
+      <a href="/pages/pragramming-dev.html" class="btn-hero btn-hero-main">
+        <div class="ripple-container"></div>
+        🎓 Explore Courses
+      </a>
+      <!-- <a href="contact-us.html" class="btn-hero btn-hero-sec">
+        <div class="ripple-container"></div>
+        📅 Book Free Demo
+      </a> -->
+      <a href="/pages/contact-us.html" class="btn-hero btn-hero-orange">
+        <div class="ripple-container"></div>
+        🚀 Start Learning
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-icon">🎓</div>
+        <div class="stat-num" data-target="25000">0</div>
+        <div class="stat-label">Students Trained</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">💼</div>
+        <div class="stat-num" data-target="5000">0</div>
+        <div class="stat-label">Placements Done</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">⭐</div>
+        <div class="stat-num" data-target="4.9" data-decimal="true">0</div>
+        <div class="stat-label">Student Rating</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🏆</div>
+        <div class="stat-num" data-target="150">0</div>
+        <div class="stat-label">Courses Available</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual reveal-right">
+
+    <div class="visual-main">
+      <div class="visual-inner">
+        <div class="visual-emoji">🧑‍💻</div>
+        <div class="visual-title">Learning Dashboard</div>
+        <div class="visual-sub">Your journey to ₹18 LPA starts here</div>
+        <div class="progress-bars">
+          <div class="prog-item">
+            <div class="prog-label"><span>Python</span><span>92%</span></div>
+            <div class="prog-track"><div class="prog-fill" style="width:92%"></div></div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-label"><span>React.js</span><span>78%</span></div>
+            <div class="prog-track"><div class="prog-fill" style="width:78%;animation-delay:.3s"></div></div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-label"><span>AWS</span><span>65%</span></div>
+            <div class="prog-track"><div class="prog-fill" style="width:65%;animation-delay:.6s"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE COMPANIES -->
+<section class="marquee-section">
+  <div class="marquee-header">
+    <div class="section-label">Hiring Partners</div>
+    <h2 class="section-title" style="text-align:center">Our Students Work At</h2>
+  </div>
+  <div class="marquee-wrapper">
+    <marquee behavior="infinite" direction="">
+      <img src="./marque images/1.png" alt="" srcset="" loading="lazy">
+      <img src="./marque images/2.png" alt="" srcset="" loading="lazy">
+      <img src="./marque images/3.jpg" alt="" srcset="" loading="lazy">
+      <img src="./marque images/4.png" alt="" srcset="" loading="lazy">
+      <img src="./marque images/5.jpg" alt="" srcset="" loading="lazy">
+      <img src="./marque images/6.png" alt="" srcset="" loading="lazy">
+      <img src="./marque images/7.gif" alt="" srcset="" loading="lazy">
+      <img src="./marque images/8.jpg" alt="" srcset="" loading="lazy">
+      <img src="./marque images/9.png" alt="" srcset="" loading="lazy">
+      <img src="./marque images/10.png" alt="" srcset="" loading="lazy">
+      <img src="./marque images/11.webp" alt="" srcset="" loading="lazy">
+      <img src="./marque images/12.png" alt="" srcset="" loading="lazy">
+      <img src="./marque images/13.png" alt="" srcset="" loading="lazy">
+      <img src="./marque images/14.webp" alt="" srcset="" loading="lazy">
+      <img src="./marque images/15.png" alt="" srcset="" loading="lazy">
+      <img src="./marque images/16.png" alt="" srcset="" loading="lazy">
+      <img src="./marque images/17.png" alt="" srcset="" loading="lazy">
+    </marquee>
+    <div class="marquee-track" id="marqueeTrack">
+      <!-- Items duplicated for seamless loop -->
+    </div>
+  </div>
+</section>
+
+<!-- SALARY SECTION -->
+<section class="salary-section">
+  <div class="reveal">
+    <div class="section-label">Success Stories</div>
+    <h2 class="section-title">Students Achieving High Salary Packages</h2>
+    <p class="section-sub">Our graduates land dream jobs at top companies with competitive compensation.</p>
+  </div>
+  <div class="salary-grid reveal">
+    <div class="salary-card">
+      <div class="salary-icon">💻</div>
+      <div class="salary-role">Full Stack Developer</div>
+      <div class="salary-amount" data-salary="12">₹0 LPA</div>
+      <div class="salary-tag">🔥 High Demand</div>
+      <div class="salary-bar-wrap"><div class="salary-bar-fill" data-width="70"></div></div>
+    </div>
+    <div class="salary-card">
+      <div class="salary-icon">📊</div>
+      <div class="salary-role">Data Analyst</div>
+      <div class="salary-amount" data-salary="9">₹0 LPA</div>
+      <div class="salary-tag">📈 Growing Fast</div>
+      <div class="salary-bar-wrap"><div class="salary-bar-fill" data-width="55"></div></div>
+    </div>
+    <div class="salary-card">
+      <div class="salary-icon">⚙️</div>
+      <div class="salary-role">DevOps Engineer</div>
+      <div class="salary-amount" data-salary="15">₹0 LPA</div>
+      <div class="salary-tag">🚀 Top Paying</div>
+      <div class="salary-bar-wrap"><div class="salary-bar-fill" data-width="85"></div></div>
+    </div>
+    <div class="salary-card">
+      <div class="salary-icon">🎨</div>
+      <div class="salary-role">UI/UX Designer</div>
+      <div class="salary-amount" data-salary="8">₹0 LPA</div>
+      <div class="salary-tag">✨ Creative Role</div>
+      <div class="salary-bar-wrap"><div class="salary-bar-fill" data-width="50"></div></div>
+    </div>
+    <div class="salary-card">
+      <div class="salary-icon">🤖</div>
+      <div class="salary-role">AI Engineer</div>
+      <div class="salary-amount" data-salary="18">₹0 LPA</div>
+      <div class="salary-tag">🏆 Premium Package</div>
+      <div class="salary-bar-wrap"><div class="salary-bar-fill" data-width="100"></div></div>
+    </div>
+    <div class="salary-card">
+      <div class="salary-icon">📱</div>
+      <div class="salary-role">Digital Marketer</div>
+      <div class="salary-amount" data-salary="10">₹0 LPA</div>
+      <div class="salary-tag">💡 In Demand</div>
+      <div class="salary-bar-wrap"><div class="salary-bar-fill" data-width="60"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="reveal">
+    <div class="section-label">Life at AcademyIndia Learn</div>
+    <h2 class="section-title">Campus & Learning Experience</h2>
+    <p class="section-sub">Immersive learning environments designed to accelerate your growth.</p>
+  </div>
+  <div class="swiper gallerySwiper reveal">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="gallery-slide">
+          <div class="gallery-img" style="background:linear-gradient(135deg,#6c3bff,#00d4ff)"><img src="./images/state-of-art-coding.jpg" alt="" srcset=""></div>
+          <div class="gallery-overlay">
+            <h3>State-of-Art Coding Labs</h3>
+            <p>Latest hardware & lightning-fast internet</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="gallery-slide">
+          <div class="gallery-img" style="background:linear-gradient(135deg,#ff3d8a,#ff6b35)"><img src="./images/live-session.jpg" alt="" srcset=""></div>
+          <div class="gallery-overlay">
+            <h3>Live Expert-Led Sessions</h3>
+            <p>Learn from industry professionals</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="gallery-slide">
+          <div class="gallery-img" style="background:linear-gradient(135deg,#39e75f,#00d4ff)"><img src="./images/mentorship.jpg" alt="" srcset=""></div>
+          <div class="gallery-overlay">
+            <h3>Mentorship & Workshops</h3>
+            <p>One-on-one guidance sessions</p>
+          </div>
+        </div>
+      </div>
+     
+      <div class="swiper-slide">
+        <div class="gallery-slide">
+          <div class="gallery-img" style="background:linear-gradient(135deg,#6c3bff,#ff3d8a)"><img src="./images/online-learning-platform.jpg" alt="" srcset=""></div>
+          <div class="gallery-overlay">
+            <h3>Online Learning Platform</h3>
+            <p>24/7 access to recorded content</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="gallery-slide">
+          <div class="gallery-img" style="background:linear-gradient(135deg,#ff3d8a,#6c3bff)"><img src="./images/community&team-activities.jpg" alt="" srcset=""></div>
+          <div class="gallery-overlay">
+            <h3>Community & Team Activities</h3>
+            <p>Build your professional network</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<!-- COURSES / SKILLS -->
+<section class="skills-section">
+  <div class="reveal">
+    <div class="section-label">Career Programs</div>
+    <h2 class="section-title">Popular Career Programs</h2>
+    <p class="section-sub">Industry-aligned programs built with top employers to guarantee job-readiness.</p>
+  </div>
+  <div class="swiper coursesSwiper reveal">
+    <div class="swiper-wrapper" id="coursesWrapper"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- SKILLS SLIDER -->
+<section class="skills-section reveal">
+  <div class="section-header">
+    <div class="section-tag">⚡ Trending Skills</div>
+    <h2 class="section-h2">Trending Skills <span>You Can Master</span></h2>
+    <p class="section-sub">Explore our in-demand courses designed with industry experts for maximum career impact.</p>
+  </div>
+  <div class="skills-track-wrap">
+    <div class="skills-track" id="skillsTrack"></div>
+  </div>
+  <div class="skills-track-wrap" style="margin-top:1.2rem;">
+    <div class="skills-track" id="skillsTrack2" style="animation-direction:reverse;"></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section">
+  <div class="reveal">
+    <div class="section-label">Student Stories</div>
+    <h2 class="section-title">What Our Students Say</h2>
+    <p class="section-sub">Real stories. Real transformations. Real careers.</p>
+  </div>
+  <div class="swiper reviewsSwiper reveal">
+    <div class="swiper-wrapper" id="reviewsWrapper"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<div class="cta-section reveal">
+  <div class="cta-particles" id="ctaParticles"></div>
+  <div class="cta-content">
+    <h2 class="cta-title">Start Your Digital Career Journey Today</h2>
+    <p class="cta-sub">Join 25,000+ students who transformed their careers with AcademyIndia Learn. Your dream job is one skill away.</p>
+  </div>
+  <div class="cta-actions">
+    <a href="#" class="btn-cta-white">🎓 Enroll Now</a>
+    <a href="contact-us.html" class="btn-cta-ghost">📞 Contact Us</a>
+  </div>
+</div>
+
+<!-- footer  -->
+ <section class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <div class="fot-logo">
+        ACADEMY INDIA
+      </div>
+      <p>India's premier digital creative academy helping students build outstanding careers in UI/UX Design, Full Stack Development, and Artificial Intelligence.</p>
+     <div class="footer-icon">
+       <a class="social-btn" href="#">in</a>
+          <a class="social-btn" href="#">𝕏</a>
+          <a class="social-btn" href="#">f</a>
+          <a class="social-btn" href="#">▶</a>
+     </div>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <div class="links">
+         <li><a href="/index.html">HOME</a></li>
+          <li><a href="/pages/about.html">ABOUT</a></li>
+          <li><a href="/pages/career.html">CAREER</a></li>
+          <li><a href="/pages/placement.html">PLACEMENTS</a></li>
+          <li><a href="/pages/contact-us.html">CONTACT US</a></li>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Digital Skills</h5>
+      <div class="links">
+          <li><a href="/pages/pragramming-dev.html">PROGRAMING & DEVELOPMENT</a></li>
+          <li><a href="/pages/data&ai.html">DATA & AI</a></li>
+          <li><a href="/pages/design&multi-media.html">DESIGN & MULTIMEDIA</a></li>
+          <li><a href="/pages/digital-skills.html">DIGITAL SKILLS</a></li>
+          <li><a href="/pages/digital-skills.html">ARTIFIAL INTELLIGENCE</a></li>
+      </div>
+
+    </div>
+    <div class="footer-col">
+      <h5>Address</h5>
+      <p>📍 Office NO. 26, Ground Floor, Heena Arcade, Swami Vivekanand Road, Jogeshwari West, Mumbai, Maharashtra, 400102</p>
+       <a href="tel:919987422429"><p style="">📞 +91 99874 22429</p></a>
+       <a href="https://wa.me/919987422429"><p style="">📩 +91 99874 22429</p></a>
+     
+    </div>
+  </div>
+
+ </section>
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
+ <!-- nav -->
+     <script>
+        // ========== NAVBAR SCROLL EFFECT ==========
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                navbar.classList.remove('glass');
+            } else {
+                navbar.classList.remove('scrolled');
+                navbar.classList.add('glass');
+            }
+        });
+        
+        // Initialize glass effect
+        if (window.scrollY <= 50) {
+            navbar.classList.add('glass');
+        }
+
+        // ========== MOBILE MENU TOGGLE ==========
+        const hamburger = document.getElementById('hamburger');
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const overlay = document.getElementById('overlay');
+        
+        function openMobileMenu() {
+            hamburger.classList.add('active');
+            mobileSidebar.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenu() {
+            hamburger.classList.remove('active');
+            mobileSidebar.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        hamburger.addEventListener('click', openMobileMenu);
+        overlay.addEventListener('click', closeMobileMenu);
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.id !== 'mobileCoursesBtn') {
+                    closeMobileMenu();
+                }
+            });
+        });
+        
+        // ========== MOBILE ACCORDION DROPDOWN ==========
+        const mobileCoursesBtn = document.getElementById('mobileCoursesBtn');
+        const mobileCoursesDropdown = document.getElementById('mobileCoursesDropdown');
+        const mobileCoursesIcon = document.getElementById('mobileCoursesIcon');
+        
+        mobileCoursesBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            mobileCoursesDropdown.classList.toggle('active');
+            mobileCoursesIcon.style.transform = mobileCoursesDropdown.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+        });
+        
+        // ========== ACTIVE LINK HIGHLIGHTING ==========
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+        
+        function updateActiveLink() {
+            let current = '';
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    current = sectionId;
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href');
+                if (href && href === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+            
+            mobileLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && href === `#${current}`) {
+                    link.style.color = '#667eea';
+                } else if (link.id !== 'mobileCoursesBtn') {
+                    link.style.color = '';
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveLink);
+        window.addEventListener('load', updateActiveLink);
+        
+        // ========== SMOOTH SCROLL ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    const navHeight = navbar.offsetHeight;
+                    const targetPosition = target.offsetTop - navHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // ========== PREVENT DROPDOWN CLOSE ON CLICK ==========
+        const megaDropdown = document.querySelector('.mega-dropdown');
+        if (megaDropdown) {
+            megaDropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        }
+        
+        // ========== CLOSE MOBILE MENU ON RESIZE ==========
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 900) {
+                closeMobileMenu();
+            }
+        });
+        
+        console.log('✅ Premium Navbar Loaded Successfully!');
+    </script>
+
+<!-- home section  -->
+<script>
+// ===== DATA =====
+const companies = ['','HDFC','Justdial','Deloitte','HCL','Infosys','TCS','Wipro','Accenture','IBM','Cognizant','Tech Mahindra','Capgemini','Amazon','Google','Microsoft','Flipkart','Paytm','Zoho','Oracle','Adobe','Dell','Samsung','Reliance','EY'];
+
+const courses = [
+  {icon:'🌐',title:'Web Development',desc:'HTML, CSS, JS and modern frameworks to build beautiful websites.',duration:'3 Months'},
+  {icon:'⚡',title:'Full Stack Development',desc:'MERN stack mastery from frontend to backend deployment.',duration:'6 Months'},
+  {icon:'📊',title:'Data Analysis',desc:'Excel, SQL, Python and Power BI for data-driven decisions.',duration:'4 Months'},
+  {icon:'📢',title:'Digital Marketing',desc:'SEO, SEM, Social Media and Analytics for modern marketers.',duration:'3 Months'},
+  {icon:'☁️',title:'DevOps with AWS',desc:'CI/CD, Docker, Kubernetes and cloud infrastructure skills.',duration:'5 Months'},
+  {icon:'🐍',title:'Python Programming',desc:'From basics to advanced Python with real-world projects.',duration:'2 Months'},
+  {icon:'☕',title:'Java Programming',desc:'Core Java, OOP, Spring Boot and enterprise development.',duration:'4 Months'},
+  {icon:'🤖',title:'AI & Machine Learning',desc:'Neural networks, deep learning and AI model deployment.',duration:'6 Months'},
+  {icon:'🎨',title:'UI/UX Design',desc:'Figma, user research, prototyping and design systems.',duration:'3 Months'},
+  {icon:'🔒',title:'Cybersecurity',desc:'Ethical hacking, penetration testing and network security.',duration:'5 Months'},
+  {icon:'☁️',title:'Cloud Computing',desc:'AWS, Azure, GCP and cloud architecture for enterprises.',duration:'4 Months'},
+  {icon:'⚛️',title:'React & Node.js',desc:'Modern JavaScript ecosystem with advanced React patterns.',duration:'4 Months'},
+];
+
+const reviews = [
+  {name:'Ankit Sharma',course:'Full Stack Development',company:'Deloitte',package:'₹12 LPA',text:'After completing the Full Stack Development training, I landed at Deloitte. The mentors were exceptional and the real projects gave me the confidence to ace interviews.',stars:5,emoji:'A'},
+  {name:'Priya Nair',course:'AI & Machine Learning',company:'Google',package:'₹18 LPA',text:'NexaLearn changed my life completely. The AI/ML curriculum is world-class and the placement team was incredibly supportive throughout the process.',stars:5,emoji:'P'},
+  {name:'Rohit Kumar',course:'DevOps with AWS',company:'Wipro',package:'₹15 LPA',text:'Hands-on labs, live projects and real interview prep. I was placed in just 2 months after completing the DevOps program. Best investment of my life!',stars:5,emoji:'R'},
+  {name:'Sneha Patel',course:'Data Analysis',company:'Infosys',package:'₹9 LPA',text:'The Data Analysis course was incredibly practical. From SQL to Power BI dashboards, everything was job-ready content that directly helped in my new role.',stars:5,emoji:'S'},
+  {name:'Varun Mehta',course:'Digital Marketing',company:'Paytm',package:'₹10 LPA',text:'I was a complete beginner. Within 3 months, I built a full marketing campaign and secured a great role at Paytm. The instructors are top-notch professionals.',stars:5,emoji:'V'},
+  {name:'Kavya Reddy',course:'UI/UX Design',company:'Adobe',package:'₹13 LPA',text:'The design thinking methodology and hands-on Figma training were incredible. Got placed at Adobe within a month of completing the program!',stars:5,emoji:'K'},
+];
+
+// ===== BUILD MARQUEE =====
+const marqueeTrack = document.getElementById('marqueeTrack');
+const doubled = [...companies, ...companies];
+doubled.forEach(c => {
+  const card = document.createElement('div');
+  card.className = 'company-card';
+  card.innerHTML = `<div class="company-dot"></div>${c}`;
+  marqueeTrack.appendChild(card);
+});
+
+// ===== BUILD COURSES =====
+const coursesWrapper = document.getElementById('coursesWrapper');
+courses.forEach(c => {
+  const slide = document.createElement('div');
+  slide.className = 'swiper-slide';
+  slide.innerHTML = `
+    <div class="course-card">
+      <div class="course-icon">${c.icon}</div>
+      <div class="course-title">${c.title}</div>
+      <div class="course-desc">${c.desc}</div>
+      <div class="course-duration">⏱ ${c.duration}</div>
+      <button class="course-btn">Learn More →</button>
+    </div>`;
+  coursesWrapper.appendChild(slide);
+});
+
+
+/* ====== SKILLS ====== */
+const skills=[
+  {n:'Full Stack Dev',i:'🌐',bg:'linear-gradient(135deg,#667eea,#764ba2)',c:'1.2K'},
+  {n:'Python Programming',i:'🐍',bg:'linear-gradient(135deg,#f093fb,#f5576c)',c:'3.4K'},
+  {n:'Data Analysis',i:'📊',bg:'linear-gradient(135deg,#4facfe,#00f2fe)',c:'2.1K'},
+  {n:'Data Science',i:'🔬',bg:'linear-gradient(135deg,#43e97b,#38f9d7)',c:'4.8K'},
+  {n:'Artificial Intelligence',i:'🤖',bg:'linear-gradient(135deg,#fa709a,#fee140)',c:'5.2K'},
+  {n:'Digital Marketing',i:'📱',bg:'linear-gradient(135deg,#a18cd1,#fbc2eb)',c:'6.1K'},
+  {n:'UI/UX Design',i:'🎨',bg:'linear-gradient(135deg,#ffecd2,#fcb69f)',c:'2.8K'},
+  {n:'DevOps with AWS',i:'☁️',bg:'linear-gradient(135deg,#30cfd0,#330867)',c:'1.9K'},
+  {n:'React JS',i:'⚛️',bg:'linear-gradient(135deg,#3a1c71,#d76d77,#ffaf7b)',c:'7.3K'},
+  {n:'Node JS',i:'🟢',bg:'linear-gradient(135deg,#134e5e,#71b280)',c:'3.5K'},
+  {n:'Cybersecurity',i:'🔐',bg:'linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)',c:'1.1K'},
+  {n:'Cloud Computing',i:'⛅',bg:'linear-gradient(135deg,#2980b9,#6dd5fa,#ffffff)',c:'2.2K'},
+  {n:'Java Programming',i:'☕',bg:'linear-gradient(135deg,#f7971e,#ffd200)',c:'4.0K'},
+  {n:'Machine Learning',i:'🧠',bg:'linear-gradient(135deg,#8e2de2,#4a00e0)',c:'3.9K'},
+];
+function buildSkills(id, arr){
+  const t = document.getElementById(id);
+  const doubled=[...arr,...arr];
+  doubled.forEach(s=>{
+    const c=document.createElement('div');
+    c.className='skill-card';
+    c.style.background=s.bg;
+    c.innerHTML=`<span class="skill-card-icon">${s.i}</span>
+    <div class="skill-card-name">${s.n}</div>
+    <div class="skill-card-count">${s.c} learners</div>`;
+    t.appendChild(c);
+  });
+}
+buildSkills('skillsTrack', skills);
+buildSkills('skillsTrack2', [...skills].reverse());
+
+// ===== BUILD REVIEWS =====
+const reviewsWrapper = document.getElementById('reviewsWrapper');
+reviews.forEach(r => {
+  const slide = document.createElement('div');
+  slide.className = 'swiper-slide';
+  slide.innerHTML = `
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-text">${r.text}</div>
+      <div class="review-stars">${'★'.repeat(r.stars)}</div>
+      <div class="review-author">
+        <div class="review-avatar">${r.emoji}</div>
+        <div>
+          <div class="review-name">${r.name}</div>
+          <div class="review-meta">${r.course} · <span class="review-company">${r.company}</span> · ${r.package}</div>
+        </div>
+      </div>
+    </div>`;
+  reviewsWrapper.appendChild(slide);
+});
+
+// ===== SWIPER INIT =====
+new Swiper('.gallerySwiper', {
+  slidesPerView: 1.2,
+  spaceBetween: 20,
+  centeredSlides: true,
+  loop: true,
+  autoplay: { delay: 3000, disableOnInteraction: false },
+  pagination: { el: '.gallerySwiper .swiper-pagination', clickable: true },
+  navigation: { nextEl: '.gallerySwiper .swiper-button-next', prevEl: '.gallerySwiper .swiper-button-prev' },
+  breakpoints: {
+    640: { slidesPerView: 2, centeredSlides: false },
+    1024: { slidesPerView: 3, centeredSlides: false },
+  }
+});
+
+new Swiper('.coursesSwiper', {
+  slidesPerView: 1.1,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: { delay: 2500, disableOnInteraction: false },
+  pagination: { el: '.coursesSwiper .swiper-pagination', clickable: true },
+  breakpoints: {
+    480: { slidesPerView: 2 },
+    768: { slidesPerView: 3 },
+    1200: { slidesPerView: 4 },
+  }
+});
+
+new Swiper('.reviewsSwiper', {
+  slidesPerView: 1.05,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: { delay: 3500, disableOnInteraction: false },
+  pagination: { el: '.reviewsSwiper .swiper-pagination', clickable: true },
+  breakpoints: {
+    640: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  }
+});
+
+// ===== TYPEWRITER =====
+const words = ['AI Skills', 'Coding', 'Marketing', 'Design', 'Data Science', 'DevOps', 'Machine Learning'];
+let wIdx = 0, cIdx = 0, deleting = false;
+const tw = document.getElementById('typewriter');
+function type() {
+  const word = words[wIdx];
+  if (!deleting) {
+    tw.textContent = word.slice(0, ++cIdx);
+    if (cIdx === word.length) { deleting = true; setTimeout(type, 1800); return; }
+  } else {
+    tw.textContent = word.slice(0, --cIdx);
+    if (cIdx === 0) { deleting = false; wIdx = (wIdx + 1) % words.length; }
+  }
+  setTimeout(type, deleting ? 60 : 110);
+}
+type();
+
+// ===== COUNTER ANIMATION =====
+function animateCounter(el) {
+  const target = parseFloat(el.dataset.target);
+  const isDecimal = el.dataset.decimal === 'true';
+  const duration = 2000;
+  const step = duration / 60;
+  let current = 0;
+  const inc = target / (duration / step);
+  const timer = setInterval(() => {
+    current = Math.min(current + inc, target);
+    el.textContent = isDecimal ? current.toFixed(1) : Math.floor(current).toLocaleString('en-IN') + (target >= 1000 ? '+' : '+');
+    if (current >= target) {
+      el.textContent = isDecimal ? target.toFixed(1) : target.toLocaleString('en-IN') + '+';
+      clearInterval(timer);
+    }
+  }, step);
+}
+
+// ===== SALARY ANIMATION =====
+function animateSalary(el) {
+  const target = parseInt(el.dataset.salary);
+  let cur = 0;
+  const inc = target / 40;
+  const timer = setInterval(() => {
+    cur = Math.min(cur + inc, target);
+    el.textContent = `₹${Math.floor(cur)} LPA`;
+    if (cur >= target) { el.textContent = `₹${target} LPA`; clearInterval(timer); }
+  }, 40);
+}
+
+// ===== SCROLL REVEAL =====
+const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+let countersStarted = false;
+let salaryStarted = false;
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+revealEls.forEach(el => io.observe(el));
+
+// Stats counter observer
+const statsObs = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting && !countersStarted) {
+    countersStarted = true;
+    document.querySelectorAll('.stat-num').forEach(animateCounter);
+  }
+}, { threshold: 0.5 });
+const statsSection = document.querySelector('.hero-stats');
+if (statsSection) statsObs.observe(statsSection);
+
+// Salary observer
+const salaryObs = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting && !salaryStarted) {
+    salaryStarted = true;
+    document.querySelectorAll('[data-salary]').forEach(animateSalary);
+    document.querySelectorAll('.salary-bar-fill').forEach(bar => {
+      bar.style.width = bar.dataset.width + '%';
+    });
+  }
+}, { threshold: 0.3 });
+const salarySection = document.querySelector('.salary-section');
+if (salarySection) salaryObs.observe(salarySection);
+
+// ===== RIPPLE EFFECT =====
+document.querySelectorAll('.btn-hero').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    const container = this.querySelector('.ripple-container');
+    const r = document.createElement('div');
+    r.className = 'ripple';
+    const rect = container.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    r.style.cssText = `width:${size}px;height:${size}px;left:${e.clientX-rect.left-size/2}px;top:${e.clientY-rect.top-size/2}px`;
+    container.appendChild(r);
+    setTimeout(() => r.remove(), 700);
+  });
+});
+
+// ===== CTA PARTICLES =====
+const ctaParticles = document.getElementById('ctaParticles');
+for (let i = 0; i < 20; i++) {
+  const p = document.createElement('div');
+  p.className = 'particle';
+  const size = Math.random() * 40 + 10;
+  const dur = Math.random() * 15 + 8;
+  const delay = Math.random() * 10;
+  p.style.cssText = `width:${size}px;height:${size}px;left:${Math.random()*100}%;top:${Math.random()*100}%;animation-duration:${dur}s;animation-delay:-${delay}s`;
+  const ky = `@keyframes pf${i}{0%{transform:translate(0,0) scale(1);opacity:0.15}50%{transform:translate(${(Math.random()-.5)*80}px,${(Math.random()-.5)*80}px) scale(${Math.random()+0.5});opacity:0.3}100%{transform:translate(0,0) scale(1);opacity:0.15}}`;
+  const s = document.createElement('style');
+  s.textContent = ky;
+  document.head.appendChild(s);
+  p.style.animationName = `pf${i}`;
+  p.style.animationTimingFunction = 'ease-in-out';
+  p.style.animationIterationCount = 'infinite';
+  ctaParticles.appendChild(p);
+}
+
+// ===== NAV MOBILE =====
+function toggleMenu() {
+  const links = document.querySelector('.nav-links');
+  const navCta = document.querySelector('.nav-cta');
+  if (links) links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+  if (navCta) navCta.style.display = navCta.style.display === 'flex' ? 'none' : 'flex';
+}
+
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('a[href="#"]').forEach(a => {
+  a.addEventListener('click', e => e.preventDefault());
+});
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,1007 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Academy – Master Digital Skills</title>
+<link rel="stylesheet" href="/css/1.css">
+<link rel="stylesheet" href="/css/digital-skills.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+     <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span class="logo-text">DigitalAcademy</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <div class="nav-item">
+                    <a href="/index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/about.html" class="nav-link">
+                        <i class="fas fa-info-circle"></i> About
+                    </a>
+                </div>
+                
+                <!-- Courses Mega Dropdown -->
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-book-open"></i> All Courses <i class="fas fa-chevron-down"></i>
+                    </a>
+                    
+                    <div class="mega-dropdown">
+                        <div class="dropdown-grid">
+                            <!-- Programming & Development -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-code"></i> Programming & Development</h4>
+                                <ul>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fab fa-python"></i> Python</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fab fa-java"></i> Java</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fas fa-code"></i> C / C++</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fas fa-layer-group"></i> Full Stack Development</a></li>
+                                    <li><a href="/pages/pragramming-dev.html"><i class="fab fa-js"></i> JavaScript</a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Data & AI -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-chart-line"></i> Data & AI</h4>
+                                <ul>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-database"></i> Data Science</a></li>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-brain"></i> Machine Learning</a></li>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-microchip"></i> Deep Learning</a></li>
+                                    <li><a href="/pages/data&ai.html"><i class="fas fa-robot"></i> Artificial Intelligence</a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Design & Multimedia -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-paint-brush"></i> Design & Multimedia</h4>
+                                <ul>
+                                    <li><a href="/pages/design&multi-media.html"><i class="fas fa-pen-fancy"></i> UI/UX Design</a></li>
+                                    <li><a href="/pages/design&multi-media.html"><i class="fas fa-palette"></i> Graphic Design</a></li>
+                                    <li><a href="design&multi-media.html"><i class="fas fa-video"></i> Video Editing</a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Digital Skills -->
+                            <div class="dropdown-category">
+                                <h4><i class="fas fa-chart-simple"></i> Digital Skills</h4>
+                                <ul>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-chart-simple"></i> Digital Marketing</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-search"></i> SEO</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fab fa-facebook"></i> Social Media Marketing</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-pen-fancy"></i> Content Writing</a></li>
+                                    <li><a href="/pages/digital-skills.html"><i class="fas fa-briefcase"></i> Freelancing Skills</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                <div class="nav-item">
+                    <a href="/pages/career.html" class="nav-link"><i class="fas fa-briefcase"></i> Careers</a>
+                </div>
+               
+                <div class="nav-item">
+                    <a href="/pages/success-stories.html" class="nav-link"><i class="fas fa-star"></i> Success Stories</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/placement.html" class="nav-link"><i class="fas fa-user-tie"></i> Placements</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/contact-us.html" class="nav-link btn-enroll"><i class="fas fa-address-book"></i> Contact</a>
+                </div>
+                
+              
+                
+                
+            </div>
+            
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <a href="/index.html" class="mobile-nav-link">🏠 Home</a>
+            <a href="/pages/about.html" class="mobile-nav-link">ℹ️ About</a>
+            
+            <!-- Mobile Courses Accordion -->
+            <div>
+                <div class="mobile-nav-link" id="mobileCoursesBtn" style="cursor: pointer;">
+                    📚 All Courses <i class="fas fa-chevron-down" id="mobileCoursesIcon"></i>
+                </div>
+                <div class="mobile-dropdown-content" id="mobileCoursesDropdown">
+                    <div class="mobile-dropdown-category">
+                        <h4>💻 Programming & Development</h4>
+                        <a href="/pages/pragramming-dev.html"><i class="fab fa-python"></i> Python</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fab fa-java"></i> Java</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fas fa-code"></i> C / C++</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fab fa-js"></i> JavaScript</a>
+                        <a href="/pages/pragramming-dev.html"><i class="fas fa-layer-group"></i> Full Stack Development</a>
+                    </div>
+                    <div class="mobile-dropdown-category">
+                        <h4>📊 Data & AI</h4>
+                        <a href="/pages/data&ai.html"><i class="fas fa-database"></i> Data Science</a>
+                        <a href="/pages/data&ai.html"><i class="fas fa-brain"></i> Machine Learning</a>
+                        <a href="/pages/data&ai.html"><i class="fas fa-microchip"></i> Deep Learning</a>
+                        <a href="/pages/data&ai.html"><i class="fas fa-robot"></i> Artificial Intelligence</a>
+                    </div>
+                    <div class="mobile-dropdown-category">
+                        <h4>🎨 Design & Multimedia</h4>
+                        <a href="/pages/design&multi-media.html"><i class="fas fa-pen-fancy"></i> UI/UX Design</a>
+                        <a href="/pages/design&multi-media.html"><i class="fas fa-palette"></i> Graphic Design</a>
+                        <a href="/pages/design&multi-media.html"><i class="fas fa-video"></i> Video Editing</a>
+                    </div>
+                    <div class="mobile-dropdown-category">
+                        <h4>📈 Digital Skills</h4>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-chart-simple"></i> Digital Marketing</a>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-search"></i> SEO</a>
+                        <a href="/pages/digital-skills.html"><i class="fab fa-facebook"></i> Social Media Marketing</a>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-pen-fancy"></i> Content Writing</a>
+                        <a href="/pages/digital-skills.html"><i class="fas fa-briefcase"></i> Freelancing Skills</a>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="/pages/career.html" class="mobile-nav-link">💼 Careers</a>
+             <a href="/pages/success-stories.html" class="mobile-nav-link">⭐ Success Stories</a>
+            <a href="/pages/placement.html" class="mobile-nav-link">💼 Placements</a>
+           
+            <div style="margin-top: 1rem;">
+                <a href="/pages/contact-us.html" class="mobile-nav-link" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; justify-content: center;font-size: 1.2em;">
+                    📞 Contact
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- ══════════════ HERO ══════════════ -->
+<section id="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="hero-inner">
+    <!-- LEFT -->
+    <div class="hero-left" data-aos="fade-right" data-aos-duration="900">
+      <div class="hero-badge"><span></span>🚀 #1 Digital Skills Academy</div>
+      <h1 class="hero-title">Master <span class="gradient-text">Digital Skills</span> & Build Your Online Career</h1>
+      <div class="typing-wrapper">Learn <span id="typing-text"></span><span class="cursor"></span></div>
+      <p class="hero-sub">Learn high-demand digital skills from industry experts and grow your career, business, freelancing income, and online presence with world-class training.</p>
+      <div class="hero-btns">
+        <a href="#digital-marketing" class="btn-primary" id="exploreBtn"><i class="fas fa-rocket"></i> Explore Skills</a>
+        <a href="#advantages" class="btn-secondary"><i class="fas fa-play-circle"></i> Start Learning</a>
+        <a href="#contact" class="btn-outline">Contact Us</a>
+      </div>
+    </div>
+    <!-- RIGHT: Dashboard -->
+    <div class="hero-right" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+      <div class="hero-dashboard">
+        <div class="dash-header">
+          <span class="dash-title">📊 Your Learning Dashboard</span>
+          <div class="dash-dots"><span></span><span></span><span></span></div>
+        </div>
+        <div class="dash-stats">
+          <div class="dash-stat"><div class="dash-stat-num" id="ds1">0</div><div class="dash-stat-label">Skills Unlocked</div></div>
+          <div class="dash-stat"><div class="dash-stat-num" id="ds2">0</div><div class="dash-stat-label">Projects Done</div></div>
+          <div class="dash-stat"><div class="dash-stat-num" id="ds3">0%</div><div class="dash-stat-label">Course Progress</div></div>
+          <div class="dash-stat"><div class="dash-stat-num" id="ds4">0</div><div class="dash-stat-label">Certificates</div></div>
+        </div>
+        <div class="dash-chart">
+          <div class="dash-chart-label"><span>Digital Marketing</span><span>88%</span></div>
+          <div class="chart-bar-wrap"><div class="chart-bar bar-dm"></div></div>
+          <div class="dash-chart-label"><span>SEO Mastery</span><span>75%</span></div>
+          <div class="chart-bar-wrap"><div class="chart-bar bar-seo"></div></div>
+          <div class="dash-chart-label"><span>Social Media</span><span>92%</span></div>
+          <div class="chart-bar-wrap"><div class="chart-bar bar-sm"></div></div>
+          <div class="dash-chart-label"><span>Content Writing</span><span>68%</span></div>
+          <div class="chart-bar-wrap"><div class="chart-bar bar-cw"></div></div>
+        </div>
+        <div class="dash-tags">
+          <span class="dash-tag tag-purple">✨ Top Learner</span>
+          <span class="dash-tag tag-cyan">🏆 Certified</span>
+          <span class="dash-tag tag-orange">🔥 Streak 14d</span>
+          <span class="dash-tag tag-green">💰 Freelancing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marqueeTrack">
+    <span class="marquee-item"><i class="fas fa-star"></i> Digital Marketing</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item"><i class="fas fa-search"></i> SEO Mastery</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item"><i class="fas fa-hashtag"></i> Social Media Marketing</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item"><i class="fas fa-pen"></i> Content Writing</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item"><i class="fas fa-laptop-code"></i> Freelancing Skills</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item"><i class="fas fa-bullhorn"></i> Google Ads</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item"><i class="fas fa-chart-line"></i> Analytics</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item"><i class="fas fa-star"></i> Digital Marketing</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item"><i class="fas fa-search"></i> SEO Mastery</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item"><i class="fas fa-hashtag"></i> Social Media Marketing</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item"><i class="fas fa-pen"></i> Content Writing</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item"><i class="fas fa-laptop-code"></i> Freelancing Skills</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item"><i class="fas fa-bullhorn"></i> Google Ads</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item"><i class="fas fa-chart-line"></i> Analytics</span>
+    <span class="marquee-sep">✦</span>
+  </div>
+</div>
+
+<!-- ══════════════ 2. ADVANTAGES ══════════════ -->
+<section id="advantages">
+  <div class="blob blob-1" style="opacity:.15;width:350px;height:350px;top:50px;right:-50px;"></div>
+  <div style="max-width:1000px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:3rem;" data-aos="fade-up">
+      <span class="section-label">📖 Why It Matters</span>
+      <h2 class="section-title">Why <span class="gradient-text">Digital Skills</span> Are Important Today</h2>
+    </div>
+    <div class="advantages-box" data-aos="fade-up" data-aos-delay="100">
+      <p class="adv-para">In today's rapidly evolving digital landscape, <span class="highlight">digital skills have become the most valuable currency</span> of the 21st century workforce. Whether you're a student, professional, entrepreneur, or homemaker, mastering digital skills opens doors to <span class="highlight">limitless online earning opportunities</span> that were unimaginable just a decade ago. The global digital economy is worth over <span class="highlight">$11 trillion</span>, and companies worldwide are desperately searching for skilled digital professionals.</p>
+      <p class="adv-para">The <span class="highlight">freelancing revolution</span> has transformed how people work. Platforms like Fiverr, Upwork, and Freelancer.com now host millions of projects monthly, and skilled freelancers earn anywhere from <span class="highlight">$500 to $10,000+ per month</span> working from the comfort of their homes. Businesses of every size now allocate <span class="highlight">significant marketing budgets to digital channels</span> — from social media advertising and Google Ads to SEO and content marketing — creating massive demand for trained digital marketers.</p>
+      <p class="adv-para">The <span class="highlight">work-from-home revolution</span> has permanently changed employment. Remote digital roles now account for over 30% of all job postings globally. With strong digital skills, you can land remote jobs, build your own agency, or grow a personal brand that generates passive income. <span class="highlight">Personal branding</span> through social media and content creation has enabled thousands of individuals to become recognized industry authorities, earning sponsorships, consulting fees, and product sales.</p>
+      <p class="adv-para">Career growth in digital industries <span class="highlight">outpaces every other sector</span>. Digital marketing specialists, SEO experts, content strategists, and social media managers consistently rank among the most in-demand professionals globally. With a certificate from DigiAcademy, you join a <span class="highlight">global community of 50,000+ successful digital professionals</span> who have transformed their lives through the power of digital education.</p>
+      <div class="adv-grid">
+        <div class="adv-item" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-globe"></i><span>Global Career Opportunities</span></div>
+        <div class="adv-item" data-aos="fade-up" data-aos-delay="150"><i class="fas fa-home"></i><span>Work From Anywhere</span></div>
+        <div class="adv-item" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-dollar-sign"></i><span>High Earning Potential</span></div>
+        <div class="adv-item" data-aos="fade-up" data-aos-delay="250"><i class="fas fa-rocket"></i><span>Fast Career Growth</span></div>
+        <div class="adv-item" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-users"></i><span>Build Personal Brand</span></div>
+        <div class="adv-item" data-aos="fade-up" data-aos-delay="350"><i class="fas fa-briefcase"></i><span>Freelancing Freedom</span></div>
+        <div class="adv-item" data-aos="fade-up" data-aos-delay="400"><i class="fas fa-chart-bar"></i><span>Business Growth</span></div>
+        <div class="adv-item" data-aos="fade-up" data-aos-delay="450"><i class="fas fa-certificate"></i><span>Industry Certification</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 3. DIGITAL MARKETING ══════════════ -->
+<section id="digital-marketing">
+  <div class="blob blob-2" style="opacity:.15;"></div>
+  <div class="two-col" style="padding:0;">
+    <div data-aos="fade-right" data-aos-duration="800">
+      <span class="section-label">💻 Module 1</span>
+      <h2 class="section-title"><span class="gradient-text">Digital Marketing</span> Mastery</h2>
+      <p class="section-subtitle" style="margin-bottom:2rem;">Unlock the full power of digital marketing — from social media advertising and Google Ads to branding, lead generation, and data-driven campaign management.</p>
+      <div class="feature-cards">
+        <div class="feat-card"><i class="fab fa-google" style="color:#EA4335;"></i><h4>Google Ads</h4><p>Master PPC campaigns, search ads, display networks & shopping ads for maximum ROI.</p></div>
+        <div class="feat-card"><i class="fas fa-bullhorn" style="color:#7C6FFF;"></i><h4>Social Advertising</h4><p>Run high-converting campaigns on Facebook, Instagram & LinkedIn with precision targeting.</p></div>
+        <div class="feat-card"><i class="fas fa-chart-pie" style="color:#00D4E8;"></i><h4>Analytics & Data</h4><p>Interpret Google Analytics, track conversions & optimize campaigns with real data insights.</p></div>
+        <div class="feat-card"><i class="fas fa-funnel-dollar" style="color:#FFA756;"></i><h4>Lead Generation</h4><p>Build sales funnels, landing pages & email sequences that convert visitors to customers.</p></div>
+        <div class="feat-card"><i class="fas fa-paint-brush" style="color:#f093fb;"></i><h4>Brand Strategy</h4><p>Develop compelling brand identity, messaging, and visual language that resonates.</p></div>
+        <div class="feat-card"><i class="fas fa-cogs" style="color:#43e97b;"></i><h4>Campaign Management</h4><p>Plan, execute & optimize multi-channel marketing campaigns from start to finish.</p></div>
+      </div>
+    </div>
+    <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+      <div class="dm-illustration">
+        <div class="dm-mock-screen">
+          <div class="dm-mock-header">
+            <div class="dm-avatar">DM</div>
+            <div class="dm-meta"><h4>Marketing Dashboard</h4><p>Live Campaign Analytics</p></div>
+            <span style="margin-left:auto;background:#dcfce7;color:#166534;padding:.25rem .7rem;border-radius:20px;font-size:.72rem;font-weight:700;">● LIVE</span>
+          </div>
+          <div class="dm-kpi-grid">
+            <div class="dm-kpi"><div class="dm-kpi-val" style="color:#7C6FFF;">24.6K</div><div class="dm-kpi-lab">Impressions</div></div>
+            <div class="dm-kpi"><div class="dm-kpi-val" style="color:#00D4E8;">3.2K</div><div class="dm-kpi-lab">Clicks</div></div>
+            <div class="dm-kpi"><div class="dm-kpi-val" style="color:#FFA756;">$1,240</div><div class="dm-kpi-lab">Revenue</div></div>
+            <div class="dm-kpi"><div class="dm-kpi-val" style="color:#43e97b;">12.8%</div><div class="dm-kpi-lab">CTR</div></div>
+          </div>
+          <div class="dm-bar-section">
+            <div class="dm-bar-row"><div class="dm-bar-info"><span>Search Ads</span><span>82%</span></div><div class="chart-bar-wrap"><div class="chart-bar" style="width:82%;background:var(--gradient-1);"></div></div></div>
+            <div class="dm-bar-row"><div class="dm-bar-info"><span>Social Ads</span><span>71%</span></div><div class="chart-bar-wrap"><div class="chart-bar" style="width:71%;background:var(--gradient-5);"></div></div></div>
+            <div class="dm-bar-row"><div class="dm-bar-info"><span>Email Mktg</span><span>64%</span></div><div class="chart-bar-wrap"><div class="chart-bar" style="width:64%;background:var(--gradient-3);"></div></div></div>
+            <div class="dm-bar-row"><div class="dm-bar-info"><span>Content Mktg</span><span>89%</span></div><div class="chart-bar-wrap"><div class="chart-bar" style="width:89%;background:var(--gradient-4);"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 4. SEO ══════════════ -->
+<section id="seo">
+  <div class="seo-inner">
+    <div class="seo-header" data-aos="fade-up">
+      <span class="section-label">🔍 Module 2</span>
+      <h2 class="section-title">Search Engine <span class="gradient-text-2">Optimization (SEO)</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">Dominate search rankings, drive organic traffic & build long-term digital authority with proven SEO strategies.</p>
+    </div>
+    <div class="seo-grid">
+      <div class="seo-cards" data-aos="fade-right" data-aos-duration="800">
+        <div class="seo-card"><h4>🏠 On-Page SEO</h4><p>Master meta tags, heading structures, keyword placement, internal linking, and content optimization for maximum page relevance.</p></div>
+        <div class="seo-card"><h4>🔗 Off-Page SEO</h4><p>Build high-quality backlinks, leverage guest blogging, directory submissions & digital PR to boost domain authority.</p></div>
+        <div class="seo-card"><h4>⚙️ Technical SEO</h4><p>Optimize site speed, mobile-friendliness, crawlability, structured data & Core Web Vitals for search engine excellence.</p></div>
+        <div class="seo-card"><h4>🔑 Keyword Research</h4><p>Use professional tools like Ahrefs, SEMrush & Google Search Console to discover high-value keywords and search intent.</p></div>
+        <div class="seo-card"><h4>📈 Ranking Strategies</h4><p>Develop content clusters, pillar pages & link acquisition strategies that consistently push websites to page one.</p></div>
+      </div>
+      <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+        <div class="seo-dashboard">
+          <div class="seo-dash-title"><i class="fas fa-chart-line"></i> SEO Performance Tracker</div>
+          <div class="rank-row"><span class="rank-keyword">Digital Marketing</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:95%;background:var(--gradient-1);"></div></div><span class="rank-pos">#1</span></div>
+          <div class="rank-row"><span class="rank-keyword">SEO Course</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:88%;background:var(--gradient-3);"></div></div><span class="rank-pos">#3</span></div>
+          <div class="rank-row"><span class="rank-keyword">Freelancing Tips</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:82%;background:var(--gradient-5);"></div></div><span class="rank-pos">#4</span></div>
+          <div class="rank-row"><span class="rank-keyword">Content Writing</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:78%;background:var(--gradient-4);"></div></div><span class="rank-pos">#5</span></div>
+          <div class="rank-row"><span class="rank-keyword">Social Media Mktg</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:70%;background:var(--gradient-2);"></div></div><span class="rank-pos">#7</span></div>
+          <div class="seo-score-ring"><div class="score-circle"><span class="score-num">90</span></div></div>
+          <p style="text-align:center;font-size:.78rem;color:#888;margin-top:.5rem;font-weight:600;">Overall SEO Score</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem;margin-top:1.5rem;text-align:center;">
+            <div style="background:rgba(124,111,255,.07);border-radius:12px;padding:.6rem;"><div style="font-size:1rem;font-weight:800;color:var(--purple);">4.2K</div><div style="font-size:.68rem;color:#888;">Backlinks</div></div>
+            <div style="background:rgba(0,212,232,.07);border-radius:12px;padding:.6rem;"><div style="font-size:1rem;font-weight:800;color:var(--cyan);">87</div><div style="font-size:.68rem;color:#888;">Domain Auth.</div></div>
+            <div style="background:rgba(255,167,86,.1);border-radius:12px;padding:.6rem;"><div style="font-size:1rem;font-weight:800;color:var(--light-orange);">18.3K</div><div style="font-size:.68rem;color:#888;">Monthly Visits</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 5. SOCIAL MEDIA ══════════════ -->
+<section id="social-media">
+  <div class="sm-inner">
+    <div class="sm-header" data-aos="fade-up">
+      <span class="section-label">📱 Module 3</span>
+      <h2 class="section-title">Social Media <span class="gradient-text-3">Marketing</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">Grow brands, build communities & drive sales across all major social platforms with data-driven strategies.</p>
+    </div>
+    <div class="platforms-row" data-aos="fade-up" data-aos-delay="100">
+      <div class="platform-pill pill-ig"><i class="fab fa-instagram"></i> Instagram</div>
+      <div class="platform-pill pill-fb"><i class="fab fa-facebook-f"></i> Facebook</div>
+      <div class="platform-pill pill-li"><i class="fab fa-linkedin-in"></i> LinkedIn</div>
+      <div class="platform-pill pill-yt"><i class="fab fa-youtube"></i> YouTube</div>
+      <div class="platform-pill pill-tw"><i class="fab fa-twitter"></i> Twitter / X</div>
+    </div>
+    <div class="sm-cards">
+      <div class="sm-card" data-aos="fade-up" data-aos-delay="100">
+        <span class="sm-card-icon">📸</span>
+        <h3>Instagram Growth</h3>
+        <p>Reels strategy, hashtag research, story ads, influencer partnerships & shoppable posts for explosive growth.</p>
+        <div class="engagement-bar"><div class="engagement-fill" style="width:92%;background:linear-gradient(90deg,#f09433,#dc2743);"></div></div>
+        <div style="font-size:.72rem;color:#888;margin-top:.3rem;">92% Engagement Rate</div>
+      </div>
+      <div class="sm-card" data-aos="fade-up" data-aos-delay="150">
+        <span class="sm-card-icon">👥</span>
+        <h3>Facebook Ads Mastery</h3>
+        <p>Build custom audiences, run retargeting campaigns & optimize ad sets for the lowest cost per acquisition.</p>
+        <div class="engagement-bar"><div class="engagement-fill" style="width:85%;background:linear-gradient(90deg,#1877F2,#0D47A1);"></div></div>
+        <div style="font-size:.72rem;color:#888;margin-top:.3rem;">85% Campaign Performance</div>
+      </div>
+      <div class="sm-card" data-aos="fade-up" data-aos-delay="200">
+        <span class="sm-card-icon">💼</span>
+        <h3>LinkedIn B2B Marketing</h3>
+        <p>Build professional presence, generate B2B leads & leverage LinkedIn Sales Navigator for business growth.</p>
+        <div class="engagement-bar"><div class="engagement-fill" style="width:78%;background:linear-gradient(90deg,#0A66C2,#004182);"></div></div>
+        <div style="font-size:.72rem;color:#888;margin-top:.3rem;">78% Lead Quality Score</div>
+      </div>
+      <div class="sm-card" data-aos="fade-up" data-aos-delay="250">
+        <span class="sm-card-icon">🎬</span>
+        <h3>YouTube Marketing</h3>
+        <p>Video SEO, thumbnail design, channel monetization, YouTube Ads & growing a loyal subscriber base.</p>
+        <div class="engagement-bar"><div class="engagement-fill" style="width:88%;background:linear-gradient(90deg,#FF0000,#CC0000);"></div></div>
+        <div style="font-size:.72rem;color:#888;margin-top:.3rem;">88% Video Retention</div>
+      </div>
+      <div class="sm-card" data-aos="fade-up" data-aos-delay="300">
+        <span class="sm-card-icon">🐦</span>
+        <h3>Twitter / X Strategy</h3>
+        <p>Viral thread writing, Twitter Ads, community building & leveraging X for personal brand authority.</p>
+        <div class="engagement-bar"><div class="engagement-fill" style="width:74%;background:linear-gradient(90deg,#1DA1F2,#0D8ECF);"></div></div>
+        <div style="font-size:.72rem;color:#888;margin-top:.3rem;">74% Audience Growth</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 6. CONTENT WRITING ══════════════ -->
+<section id="content-writing">
+  <div class="blob blob-3" style="opacity:.1;"></div>
+  <div class="cw-inner">
+    <div style="text-align:center;margin-bottom:4rem;" data-aos="fade-up">
+      <span class="section-label">✍️ Module 4</span>
+      <h2 class="section-title">Professional <span class="gradient-text">Content Writing</span> Skills</h2>
+      <p class="section-subtitle" style="margin:0 auto;">Words that convert, engage & rank. Master every form of written content for the digital world.</p>
+    </div>
+    <div class="cw-grid">
+      <div data-aos="fade-right" data-aos-duration="800">
+        <div class="cw-text-ui">
+          <div class="cw-toolbar">
+            <span class="cw-tool">H1</span><span class="cw-tool">H2</span><span class="cw-tool"><b>B</b></span><span class="cw-tool"><i>I</i></span><span class="cw-tool">🔗</span><span class="cw-tool">📷</span><span class="cw-tool">SEO</span><span class="cw-tool">AI Assist</span>
+          </div>
+          <div class="cw-content">
+            <h3>📝 How to Write SEO Blog Posts That Rank</h3>
+            <p>Creating content that ranks on Google requires a perfect blend of <strong>keyword strategy</strong>, engaging storytelling, and technical optimization. Start with thorough keyword research...</p>
+            <p>Use <strong>compelling headlines</strong> that promise real value. Structure your content with clear H2 and H3 subheadings. Include <strong>original data</strong>, expert quotes, and actionable takeaways...</p>
+            <p id="cwTyping">Optimize your meta description with a clear CTA<span class="cw-cursor"></span></p>
+          </div>
+          <div style="display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;">
+            <span class="dash-tag tag-purple">SEO Score: 96</span>
+            <span class="dash-tag tag-cyan">Reading Ease: A+</span>
+            <span class="dash-tag tag-orange">Words: 1,240</span>
+            <span class="dash-tag tag-green">Originality: 100%</span>
+          </div>
+        </div>
+      </div>
+      <div class="cw-skills" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+        <div class="cw-skill-item"><div class="cw-skill-icon" style="background:rgba(124,111,255,.1);color:var(--purple);">📰</div><div class="cw-skill-text"><h4>Blog Writing</h4><p>Long-form articles, listicles, how-to guides that rank & drive organic traffic consistently.</p></div></div>
+        <div class="cw-skill-item"><div class="cw-skill-icon" style="background:rgba(0,212,232,.1);color:var(--cyan);">🔍</div><div class="cw-skill-text"><h4>SEO Content Writing</h4><p>Keyword-optimized content with proper on-page structure for search engine domination.</p></div></div>
+        <div class="cw-skill-item"><div class="cw-skill-icon" style="background:rgba(255,167,86,.12);color:#E07820;">💡</div><div class="cw-skill-text"><h4>Copywriting</h4><p>Persuasive ad copy, sales pages, landing pages & CTAs that convert visitors to buyers.</p></div></div>
+        <div class="cw-skill-item"><div class="cw-skill-icon" style="background:rgba(240,93,251,.1);color:#CC55E0;">📱</div><div class="cw-skill-text"><h4>Social Media Captions</h4><p>Platform-specific captions with hooks, storytelling & strategic hashtag usage.</p></div></div>
+        <div class="cw-skill-item"><div class="cw-skill-icon" style="background:rgba(67,233,123,.1);color:#28A745;">🌐</div><div class="cw-skill-text"><h4>Website Content</h4><p>Home pages, about pages, service descriptions & UX writing that builds trust instantly.</p></div></div>
+        <!-- <div class="cw-skill-item"><div class="cw-skill-icon" style="background:rgba(74,144,226,.1);color:#2470C8;">📧</div><div class="cw-skill-text"><h4>Email Marketing</h4><p>Newsletter sequences, promotional emails, drip campaigns with high open & click rates.</p></div></div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 7. FREELANCING ══════════════ -->
+<section id="freelancing">
+  <div class="blob blob-1" style="opacity:.12;"></div>
+  <div class="fl-inner">
+    <div class="fl-header" data-aos="fade-up">
+      <span class="section-label">💼 Module 5</span>
+      <h2 class="section-title">Become a <span class="gradient-text-3">Successful Freelancer</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">From zero to five-figure monthly income — learn the exact system to build a thriving freelancing career on top global platforms.</p>
+    </div>
+    <div class="fl-platforms" data-aos="fade-up" data-aos-delay="100">
+      <div class="fl-platform"><span class="icon-big">🟢</span><h4>Fiverr</h4><p>Gig-based work</p></div>
+      <div class="fl-platform"><span class="icon-big">🔵</span><h4>Upwork</h4><p>Long-term projects</p></div>
+      <div class="fl-platform"><span class="icon-big">🟠</span><h4>Freelancer</h4><p>Bidding platform</p></div>
+      <div class="fl-platform"><span class="icon-big">🟣</span><h4>PeoplePerHour</h4><p>UK-based freelancing</p></div>
+      <div class="fl-platform"><span class="icon-big">⚫</span><h4>Toptal</h4><p>Elite top 3% network</p></div>
+    </div>
+    <div class="fl-earnings">
+      <div class="fl-earn-card" data-aos="fade-up" data-aos-delay="100">
+        <h3>🎯 Profile Optimization</h3>
+        <div class="earn-amount gradient-text">100%</div>
+        <p>Create a jaw-dropping freelancer profile with the right keywords, portfolio showcase, pricing strategy & compelling bio that attracts premium clients.</p>
+        <div style="margin-top:1rem;"><span class="dash-tag tag-purple">Profile Views ↑280%</span></div>
+      </div>
+      <div class="fl-earn-card" data-aos="fade-up" data-aos-delay="150">
+        <h3>💰 Monthly Earning Potential</h3>
+        <div class="earn-amount gradient-text-2">$3,500+</div>
+        <p>Digital marketing freelancers earn $25-$150/hr on global platforms. With our training, students consistently achieve their first paid projects within 30 days.</p>
+        <div style="margin-top:1rem;"><span class="dash-tag tag-orange">Avg. Student Earning</span></div>
+      </div>
+      <div class="fl-earn-card" data-aos="fade-up" data-aos-delay="200">
+        <h3>🚀 Client Communication</h3>
+        <div class="earn-amount gradient-text-3">5★</div>
+        <p>Master proposal writing, client onboarding, project management, revision handling & long-term client retention strategies for steady income growth.</p>
+        <div style="margin-top:1rem;"><span class="dash-tag tag-green">Client Retention: 94%</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 8. STATS ══════════════ -->
+<section id="stats">
+  <div class="stats-inner">
+    <h2 class="stats-title" data-aos="fade-up">Our Impact in Numbers</h2>
+    <p class="stats-sub" data-aos="fade-up" data-aos-delay="100">Real results from real students across the globe</p>
+    <div class="stats-grid">
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="100"><div class="stat-icon">🎓</div><div class="stat-num" data-target="50000" id="cnt1">0</div><div class="stat-label">Students Enrolled</div></div>
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="150"><div class="stat-icon">💼</div><div class="stat-num" data-target="10000" id="cnt2">0</div><div class="stat-label">Freelancers Trained</div></div>
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="200"><div class="stat-icon">⭐</div><div class="stat-num" data-target="95" id="cnt3">0</div><div class="stat-label">% Success Rate</div></div>
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="250"><div class="stat-icon">👨‍🏫</div><div class="stat-num" data-target="100" id="cnt4">0</div><div class="stat-label">Digital Mentors</div></div>
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="300"><div class="stat-icon">🏆</div><div class="stat-num" data-target="500" id="cnt5">0</div><div class="stat-label">Client Projects Done</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 9. REVIEWS ══════════════ -->
+<!-- <section id="reviews">
+  <div class="reviews-inner">
+    <div class="reviews-header" data-aos="fade-up">
+      <span class="section-label">⭐ Testimonials</span>
+      <h2 class="section-title">What <span class="gradient-text">Students Say</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">Real success stories from our graduates who transformed their careers with DigiAcademy.</p>
+    </div>
+    <div class="slider-wrap" data-aos="fade-up" data-aos-delay="100">
+      <div class="slides-track" id="slidesTrack">
+        <div class="review-card">
+          <div class="review-top"><div class="review-avatar" style="background:var(--gradient-1);">AS</div><div class="review-info"><h4>Ayesha Siddiqui</h4><p>📚 Digital Marketing Graduate</p></div></div>
+          <div class="stars">★★★★★</div>
+          <div class="review-quote">"</div>
+          <p class="review-text">I started freelancing after completing the Digital Marketing course. Within 3 months, I was earning $1,500/month from Fiverr alone. DigiAcademy completely changed my life!</p>
+        </div>
+        <div class="review-card">
+          <div class="review-top"><div class="review-avatar" style="background:var(--gradient-3);">MK</div><div class="review-info"><h4>Muhammad Kamran</h4><p>🔍 SEO Specialist</p></div></div>
+          <div class="stars">★★★★★</div>
+          <div class="review-quote">"</div>
+          <p class="review-text">SEO skills helped me grow my online business from zero to 50,000 monthly visitors. The technical SEO module was incredibly detailed and practical. Highly recommended!</p>
+        </div>
+        <div class="review-card">
+          <div class="review-top"><div class="review-avatar" style="background:var(--gradient-5);">SN</div><div class="review-info"><h4>Sara Noor</h4><p>✍️ Content Writer</p></div></div>
+          <div class="stars">★★★★★</div>
+          <div class="review-quote">"</div>
+          <p class="review-text">Now I earn $2,000+ monthly through content writing projects on Upwork. The copywriting module alone was worth 10x the course fee. This is the best investment I ever made!</p>
+        </div>
+        <div class="review-card">
+          <div class="review-top"><div class="review-avatar" style="background:var(--gradient-2);">AR</div><div class="review-info"><h4>Ali Raza</h4><p>📱 Social Media Manager</p></div></div>
+          <div class="stars">★★★★★</div>
+          <div class="review-quote">"</div>
+          <p class="review-text">The Social Media Marketing course got me a full-time remote job with a US-based company. I manage 15 brand accounts and earn 3x my previous salary. Thank you DigiAcademy!</p>
+        </div>
+        <div class="review-card">
+          <div class="review-top"><div class="review-avatar" style="background:var(--gradient-4);">FZ</div><div class="review-info"><h4>Fatima Zahoor</h4><p>💼 Freelance Consultant</p></div></div>
+          <div class="stars">★★★★★</div>
+          <div class="review-quote">"</div>
+          <p class="review-text">As a mother of two, I needed flexible work. After learning freelancing skills here, I now run my own digital agency from home with 8 regular clients. A dream come true!</p>
+        </div>
+        <div class="review-card">
+          <div class="review-top"><div class="review-avatar" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb);">HB</div><div class="review-info"><h4>Hassan Bilal</h4><p>📊 Google Ads Expert</p></div></div>
+          <div class="stars">★★★★★</div>
+          <div class="review-quote">"</div>
+          <p class="review-text">I landed a $3,000/month Google Ads contract after finishing this course. The practical assignments and mentor feedback were exceptional. World-class training at an affordable price!</p>
+        </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+      <div class="slider-dots" id="sliderDots"></div>
+      <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section> -->
+
+<!-- ══════════════ 10. GALLERY ══════════════ -->
+<!-- <section id="gallery">
+  <div class="gallery-inner">
+    <div class="gallery-header" data-aos="fade-up">
+      <span class="section-label">🖼️ Student Projects</span>
+      <h2 class="section-title">Our Student <span class="gradient-text">Work & Projects</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">Real projects crafted by our graduates — proof that world-class skills produce world-class results.</p>
+    </div>
+    <div class="masonry" data-aos="fade-up" data-aos-delay="100">
+      <div class="gallery-item"><div class="gallery-item-inner" onclick="openLightbox('Social Media Campaign Design','Instagram campaign for a fashion brand — 340% increase in engagement within 2 weeks.')"><div class="gallery-mock gm1">📸 Instagram Fashion Campaign<br><small>Social Media Marketing</small></div><div class="gallery-overlay"><h4>Fashion Brand Campaign</h4><p>Social Media Marketing</p></div></div></div>
+      <div class="gallery-item"><div class="gallery-item-inner" onclick="openLightbox('SEO Dashboard Report','Google Search Console report showing keywords moved from page 4 to page 1 in 60 days.')"><div class="gallery-mock gm2">📊 SEO Ranking Report</div><div class="gallery-overlay"><h4>SEO Ranking Dashboard</h4><p>SEO Project</p></div></div></div>
+      <div class="gallery-item"><div class="gallery-item-inner" onclick="openLightbox('Google Ads Campaign','E-commerce Google Ads campaign achieving 12.8% CTR and $1.20 CPC — 5x ROAS.')"><div class="gallery-mock gm3">💡 Google Ads Campaign<br><small>Digital Marketing — ROAS: 5x</small></div><div class="gallery-overlay"><h4>Google Ads Campaign</h4><p>Digital Marketing</p></div></div></div>
+      <div class="gallery-item"><div class="gallery-item-inner" onclick="openLightbox('Blog Content Sample','1,800-word SEO blog post ranking on page 1 for 3 competitive keywords with 0 backlinks.')"><div class="gallery-mock gm4">✍️ SEO Blog Article</div><div class="gallery-overlay"><h4>SEO Blog Content</h4><p>Content Writing</p></div></div></div>
+      <div class="gallery-item"><div class="gallery-item-inner" onclick="openLightbox('Freelancing Profile','Fiverr Top-Rated profile with 200+ 5-star reviews earning $4,200/month consistently.')"><div class="gallery-mock gm5">💼 Fiverr Top-Rated Profile<br><small>Freelancing — $4,200/mo</small></div><div class="gallery-overlay"><h4>Fiverr Profile Build</h4><p>Freelancing Skills</p></div></div></div>
+      <div class="gallery-item"><div class="gallery-item-inner" onclick="openLightbox('LinkedIn B2B Campaign','LinkedIn lead generation campaign generating 120 qualified B2B leads in one month.')"><div class="gallery-mock gm6">💼 LinkedIn B2B Leads</div><div class="gallery-overlay"><h4>LinkedIn Lead Gen</h4><p>Social Media Marketing</p></div></div></div>
+      <div class="gallery-item"><div class="gallery-item-inner" onclick="openLightbox('Email Marketing Sequence','7-email drip sequence achieving 48% open rate and 22% conversion rate for SaaS product.')"><div class="gallery-mock gm7">📧 Email Marketing Sequence<br><small>48% Open Rate | 22% Conversion</small></div><div class="gallery-overlay"><h4>Email Drip Sequence</h4><p>Content Writing</p></div></div></div>
+      <div class="gallery-item"><div class="gallery-item-inner" onclick="openLightbox('YouTube Channel Growth','YouTube channel grew from 0 to 25,000 subscribers in 4 months using our content strategy.')"><div class="gallery-mock gm8">🎬 YouTube Growth Strategy</div><div class="gallery-overlay"><h4>YouTube Channel Growth</h4><p>Social Media Marketing</p></div></div></div>
+      <div class="gallery-item"><div class="gallery-item-inner" onclick="openLightbox('Brand Identity Package','Complete brand identity for a startup including logo, color palette, typography & brand voice.')"><div class="gallery-mock gm9">🎨 Brand Identity Package<br><small>Digital Marketing — Branding</small></div><div class="gallery-overlay"><h4>Brand Identity Design</h4><p>Digital Marketing</p></div></div></div>
+    </div>
+  </div>
+</section> -->
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose"><i class="fas fa-times"></i></button>
+  <div class="lightbox-inner">
+    <h2 class="gradient-text" id="lbTitle" style="margin-bottom:1rem;"></h2>
+    <p id="lbDesc" style="color:#666;line-height:1.7;"></p>
+    <button onclick="closeLightbox()" class="btn-primary" style="margin-top:1.5rem;">Close Preview</button>
+  </div>
+</div>
+
+<!-- ══════════════ 11. WHY CHOOSE ══════════════ -->
+<section id="why-choose">
+  <div class="wc-inner">
+    <div class="wc-header" data-aos="fade-up">
+      <span class="section-label">🚀 Why Choose Us</span>
+      <h2 class="section-title">Why Choose Our <span class="gradient-text">Digital Skills Training</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">Not just courses — a complete career transformation system designed by industry experts.</p>
+    </div>
+    <div class="wc-grid">
+      <div class="wc-card" data-aos="fade-up" data-aos-delay="100" id="wc1"><div class="wc-icon" style="background:linear-gradient(135deg,rgba(124,111,255,.12),rgba(0,212,232,.12));color:var(--purple);">💻</div><h3>Live Practical Training</h3><p>Learn by doing — every concept is backed by real-world exercises, live demonstrations & hands-on projects that build genuine expertise.</p><span class="wc-badge" style="background:rgba(124,111,255,.1);color:var(--purple);">✓ 200+ Practical Exercises</span></div>
+      <div class="wc-card" data-aos="fade-up" data-aos-delay="150" id="wc2"><div class="wc-icon" style="background:linear-gradient(135deg,rgba(0,212,232,.12),rgba(74,144,226,.12));color:var(--cyan);">🏆</div><h3>Real Industry Projects</h3><p>Work on actual client briefs, build a professional portfolio & graduate with proven results that impress employers and clients worldwide.</p><span class="wc-badge" style="background:rgba(0,212,232,.1);color:#00A0B5;">✓ 15+ Client Projects</span></div>
+      <div class="wc-card" data-aos="fade-up" data-aos-delay="200" id="wc3"><div class="wc-icon" style="background:linear-gradient(135deg,rgba(255,167,86,.12),rgba(255,203,164,.2));color:#E07820;">👨‍💼</div><h3>Industry Mentors</h3><p>Learn from professionals with 10+ years of experience at global agencies, Fortune 500 companies & successful 7-figure freelancing careers.</p><span class="wc-badge" style="background:rgba(255,167,86,.12);color:#D06010;">✓ 100+ Expert Mentors</span></div>
+      <div class="wc-card" data-aos="fade-up" data-aos-delay="250" id="wc4"><div class="wc-icon" style="background:linear-gradient(135deg,rgba(67,233,123,.12),rgba(56,249,215,.12));color:#28A745;">💰</div><h3>Freelancing Guidance</h3><p>Step-by-step system to launch your freelancing career — profile setup, proposal templates, pricing strategy & client management mastery.</p><span class="wc-badge" style="background:rgba(67,233,123,.12);color:#207040;">✓ Earn in 30 Days</span></div>
+      <div class="wc-card" data-aos="fade-up" data-aos-delay="300" id="wc5"><div class="wc-icon" style="background:linear-gradient(135deg,rgba(240,93,251,.1),rgba(245,87,108,.1));color:#CC55E0;">🎓</div><h3>Industry Certification</h3><p>Receive internationally recognized digital marketing certifications that add immediate credibility to your LinkedIn profile & job applications.</p><span class="wc-badge" style="background:rgba(240,93,251,.1);color:#AA35C0;">✓ Globally Recognized</span></div>
+      <div class="wc-card" data-aos="fade-up" data-aos-delay="350" id="wc6"><div class="wc-icon" style="background:linear-gradient(135deg,rgba(74,144,226,.12),rgba(124,111,255,.12));color:#4A90E2;">🤝</div><h3>Placement Support</h3><p>Our dedicated career team connects graduates with employers, agencies & freelancing opportunities — 85% of graduates are placed within 60 days.</p><span class="wc-badge" style="background:rgba(74,144,226,.12);color:#2470C8;">✓ 85% Placement Rate</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 12. CONTACT ══════════════ -->
+<section id="contact">
+  <div class="blob blob-2" style="opacity:.12;"></div>
+  <div class="contact-inner">
+    <div class="contact-header" data-aos="fade-up">
+      <span class="section-label">📩 Get In Touch</span>
+      <h2 class="section-title">Get In Touch <span class="gradient-text">With Us</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">Have questions? Our team is ready to help you choose the right digital skills path for your goals.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
+        <div class="contact-info-item"><div class="ci-icon" style="background:var(--gradient-1);"><i class="fas fa-map-marker-alt"></i></div><div class="ci-text"><h4>Visit Our Academy</h4><p>Office NO. 26, Ground Floor, Heena Arcade, Swami Vivekanand Road, Jogeshwari West, Mumbai, Maharashtra, 400102</p></div></div>
+        <div class="contact-info-item"><div class="ci-icon" style="background:var(--gradient-3);"><i class="fas fa-phone-alt"></i></div><div class="ci-text"><h4>Call Us</h4><p>+91 99874 00429</p></div></div>
+        <div class="contact-info-item"><div class="ci-icon" style="background:var(--gradient-5);"><i class="fas fa-envelope"></i></div><div class="ci-text"><h4>Email Us</h4><p>academyindia11@gmail.com</p></div></div>
+        <div class="contact-info-item"><div class="ci-icon" style="background:var(--gradient-4);"><i class="fas fa-clock"></i></div><div class="ci-text"><h4>Office Hours</h4><p>Mon–Sat: 9AM – 8PM | Sunday: <span style="color: red;">closed</span></p></div></div>
+        <!-- <div class="map-placeholder"><i class="fas fa-map-marked-alt"></i><span>📍 Find Us on Google Maps</span></div> -->
+        <div>
+          <p style="font-size:.85rem;font-weight:700;color:#555;margin-bottom:.8rem;">Follow Us:</p>
+          <div class="social-row">
+            <a href="#" class="soc-btn" style="background:linear-gradient(135deg,#f09433,#dc2743);"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="soc-btn" style="background:#1877F2;"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="soc-btn" style="background:#0A66C2;"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="soc-btn" style="background:#FF0000;"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="soc-btn" style="background:#1DA1F2;"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <a href="https://wa.me/923001234567" class="wa-btn"><i class="fab fa-whatsapp" style="font-size:1.2rem;"></i> Chat on WhatsApp</a>
+      </div>
+      <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+        <div class="contact-form-wrap">
+          <h3 class="form-title">✉️ Send Us a Message</h3>
+          <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group"><label>Your Name *</label><input type="text" placeholder="Enter your full name" required></div>
+              <div class="form-group"><label>Email Address *</label><input type="email" placeholder="your@email.com" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+1 234 567 8900"></div>
+              <div class="form-group"><label>Course Interest *</label>
+                <select required>
+                  <option value="">Select a Course</option>
+                  <option>Digital Marketing Mastery</option>
+                  <option>SEO Expert Program</option>
+                  <option>Social Media Marketing</option>
+                  <option>Content Writing Pro</option>
+                  <option>Freelancing Bootcamp</option>
+                  <option>Complete Digital Skills Bundle</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group"><label>Your Message</label><textarea placeholder="Tell us about your goals, questions, or how we can help you..."></textarea></div>
+            <button type="submit" class="submit-btn" id="submitBtn"><i class="fas fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer  -->
+ <section class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <div class="fot-logo">
+        ACADEMY INDIA
+      </div>
+      <p>India's premier digital creative academy helping students build outstanding careers in UI/UX Design, Full Stack Development, and Artificial Intelligence.</p>
+     <div class="footer-icon">
+       <a class="social-btn" href="#">in</a>
+          <a class="social-btn" href="#">𝕏</a>
+          <a class="social-btn" href="#">f</a>
+          <a class="social-btn" href="#">▶</a>
+     </div>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <div class="links">
+         <li><a href="/index.html">HOME</a></li>
+          <li><a href="/pages/about.html">ABOUT</a></li>
+          <li><a href="/pages/career.html">CAREER</a></li>
+          <li><a href="/pages/placement.html">PLACEMENTS</a></li>
+          <li><a href="/pages/contact-us.html">CONTACT US</a></li>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Digital Skills</h5>
+      <div class="links">
+          <li><a href="/pages/pragramming-dev.html">PROGRAMING & DEVELOPMENT</a></li>
+          <li><a href="/pages/data&ai.html">DATA & AI</a></li>
+          <li><a href="/pages/design&multi-media.html">DESIGN & MULTIMEDIA</a></li>
+          <li><a href="/pages/digital-skills.html">DIGITAL SKILLS</a></li>
+          <li><a href="/pages/digital-skills.html">ARTIFIAL INTELLIGENCE</a></li>
+      </div>
+
+    </div>
+    <div class="footer-col">
+      <h5>Address</h5>
+      <p>📍 Office NO. 26, Ground Floor, Heena Arcade, Swami Vivekanand Road, Jogeshwari West, Mumbai, Maharashtra, 400102</p>
+       <a href="tel:919987422429"><p style="">📞 +91 99874 22429</p></a>
+       <a href="https://wa.me/919987422429"><p style="">📩 +91 99874 22429</p></a>
+     
+    </div>
+  </div>
+
+ </section>
+
+<!-- SCRIPTS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+ <!-- nav -->
+     <script>
+        // ========== NAVBAR SCROLL EFFECT ==========
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                navbar.classList.remove('glass');
+            } else {
+                navbar.classList.remove('scrolled');
+                navbar.classList.add('glass');
+            }
+        });
+        
+        // Initialize glass effect
+        if (window.scrollY <= 50) {
+            navbar.classList.add('glass');
+        }
+
+        // ========== MOBILE MENU TOGGLE ==========
+        const hamburger = document.getElementById('hamburger');
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const overlay = document.getElementById('overlay');
+        
+        function openMobileMenu() {
+            hamburger.classList.add('active');
+            mobileSidebar.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenu() {
+            hamburger.classList.remove('active');
+            mobileSidebar.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        hamburger.addEventListener('click', openMobileMenu);
+        overlay.addEventListener('click', closeMobileMenu);
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.id !== 'mobileCoursesBtn') {
+                    closeMobileMenu();
+                }
+            });
+        });
+        
+        // ========== MOBILE ACCORDION DROPDOWN ==========
+        const mobileCoursesBtn = document.getElementById('mobileCoursesBtn');
+        const mobileCoursesDropdown = document.getElementById('mobileCoursesDropdown');
+        const mobileCoursesIcon = document.getElementById('mobileCoursesIcon');
+        
+        mobileCoursesBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            mobileCoursesDropdown.classList.toggle('active');
+            mobileCoursesIcon.style.transform = mobileCoursesDropdown.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+        });
+        
+        // ========== ACTIVE LINK HIGHLIGHTING ==========
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+        
+        function updateActiveLink() {
+            let current = '';
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    current = sectionId;
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href');
+                if (href && href === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+            
+            mobileLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && href === `#${current}`) {
+                    link.style.color = '#667eea';
+                } else if (link.id !== 'mobileCoursesBtn') {
+                    link.style.color = '';
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveLink);
+        window.addEventListener('load', updateActiveLink);
+        
+        // ========== SMOOTH SCROLL ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    const navHeight = navbar.offsetHeight;
+                    const targetPosition = target.offsetTop - navHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // ========== PREVENT DROPDOWN CLOSE ON CLICK ==========
+        const megaDropdown = document.querySelector('.mega-dropdown');
+        if (megaDropdown) {
+            megaDropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        }
+        
+        // ========== CLOSE MOBILE MENU ON RESIZE ==========
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 900) {
+                closeMobileMenu();
+            }
+        });
+        
+        console.log('✅ Premium Navbar Loaded Successfully!');
+    </script>
+
+<script>
+// ── AOS Init
+AOS.init({ once:true, offset:80, duration:700, easing:'ease-out-cubic' });
+
+
+
+// ── Typing Animation
+const words = ['Digital Marketing', 'SEO Mastery', 'Social Media Marketing', 'Content Writing', 'Freelancing Skills'];
+let wi=0, ci=0, deleting=false;
+const typingEl = document.getElementById('typing-text');
+function typeLoop(){
+  const w = words[wi];
+  if(!deleting){ typingEl.textContent = w.slice(0,ci+1); ci++; if(ci===w.length){ setTimeout(()=>{ deleting=true; typeLoop(); },1800); return; } }
+  else { typingEl.textContent = w.slice(0,ci-1); ci--; if(ci===0){ deleting=false; wi=(wi+1)%words.length; } }
+  setTimeout(typeLoop, deleting?60:90);
+}
+typeLoop();
+
+// ── Hero Dashboard mini counters
+function miniCount(id, target, suffix=''){
+  let v=0; const el=document.getElementById(id);
+  const s=setInterval(()=>{ v+=Math.ceil(target/40); if(v>=target){v=target;clearInterval(s);} el.textContent=v+suffix; },50);
+}
+setTimeout(()=>{ miniCount('ds1',12); miniCount('ds2',8); miniCount('ds3',76,'%'); miniCount('ds4',4); },800);
+
+// ── Ripple effect
+document.getElementById('exploreBtn').addEventListener('click',function(e){
+  const r=document.createElement('span'); r.className='ripple';
+  const rect=this.getBoundingClientRect(); const size=Math.max(rect.width,rect.height);
+  r.style.cssText=`width:${size}px;height:${size}px;left:${e.clientX-rect.left-size/2}px;top:${e.clientY-rect.top-size/2}px;`;
+  this.appendChild(r); setTimeout(()=>r.remove(),700);
+});
+
+// ── Stats Counter
+function countUp(el, target, suffix=''){
+  let v=0; const inc=Math.ceil(target/80);
+  const t=setInterval(()=>{ v+=inc; if(v>=target){v=target;clearInterval(t);} el.textContent=v.toLocaleString()+suffix; },20);
+}
+const counters = document.querySelectorAll('[data-target]');
+const cObs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ const el=e.target; const t=+el.dataset.target; const s=el.id==='cnt3'?'%':'+'; countUp(el,t,s); cObs.unobserve(el); } });
+},{threshold:.4});
+counters.forEach(c=>cObs.observe(c));
+
+// ── Reviews Slider
+const track = document.getElementById('slidesTrack');
+const cards = track.querySelectorAll('.review-card');
+const dotsEl = document.getElementById('sliderDots');
+let perView = ()=> window.innerWidth<=768?1:window.innerWidth<=1024?2:3;
+let cur=0, autoSlideTimer;
+function getMax(){ return Math.ceil(cards.length/perView())-1; }
+function buildDots(){
+  dotsEl.innerHTML='';
+  for(let i=0;i<=getMax();i++){ const d=document.createElement('div'); d.className='dot'+(i===cur?' active':''); d.addEventListener('click',()=>goTo(i)); dotsEl.appendChild(d); }
+}
+function goTo(idx){ cur=Math.max(0,Math.min(idx,getMax())); const w=cards[0].offsetWidth+24; track.style.transform=`translateX(-${cur*perView()*w}px)`; buildDots(); }
+function next(){ goTo(cur>=getMax()?0:cur+1); }
+function prev(){ goTo(cur<=0?getMax():cur-1); }
+document.getElementById('nextBtn').addEventListener('click',next);
+document.getElementById('prevBtn').addEventListener('click',prev);
+function startAuto(){ autoSlideTimer=setInterval(next,4000); }
+function stopAuto(){ clearInterval(autoSlideTimer); }
+track.addEventListener('mouseenter',stopAuto);
+track.addEventListener('mouseleave',startAuto);
+window.addEventListener('resize',()=>{ goTo(0); });
+buildDots(); startAuto();
+
+// ── Lightbox
+function openLightbox(title, desc){
+  document.getElementById('lbTitle').textContent=title;
+  document.getElementById('lbDesc').textContent=desc;
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow='hidden';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow='';
+}
+document.getElementById('lbClose').addEventListener('click',closeLightbox);
+document.getElementById('lightbox').addEventListener('click',function(e){ if(e.target===this) closeLightbox(); });
+
+// ── 3D tilt on Why-Choose cards
+document.querySelectorAll('.wc-card').forEach(card=>{
+  card.addEventListener('mousemove',e=>{
+    const r=card.getBoundingClientRect();
+    const x=(e.clientX-r.left)/r.width-0.5;
+    const y=(e.clientY-r.top)/r.height-0.5;
+    card.style.transform=`perspective(800px) rotateX(${-y*8}deg) rotateY(${x*8}deg) translateY(-6px)`;
+    card.style.boxShadow=`${-x*20}px ${-y*20}px 40px rgba(124,111,255,.15)`;
+  });
+  card.addEventListener('mouseleave',()=>{ card.style.transform=''; card.style.boxShadow=''; });
+});
+
+// ── Form submit
+function handleSubmit(e){
+  e.preventDefault();
+  const btn=document.getElementById('submitBtn');
+  btn.innerHTML='<i class="fas fa-check"></i> Message Sent!';
+  btn.style.background='linear-gradient(135deg,#43e97b,#38f9d7)';
+  btn.style.boxShadow='0 6px 25px rgba(67,233,123,.4)';
+  setTimeout(()=>{ btn.innerHTML='<i class="fas fa-paper-plane"></i> Send Message'; btn.style.background=''; btn.style.boxShadow=''; e.target.reset(); },3500);
+}
+
+// ── Content Writing typing demo
+const cwLines=['Optimize your meta description with a clear CTA','Use short paragraphs for better readability and flow...','Include LSI keywords naturally throughout your content...','Add compelling visuals and infographics for engagement...'];
+let cwI=0, cwC=0, cwDel=false;
+const cwEl=document.getElementById('cwTyping');
+if(cwEl){ function cwType(){ const l=cwLines[cwI]; const txt=cwEl.firstChild; if(!txt||txt.nodeType!==3){ cwEl.insertBefore(document.createTextNode(''),cwEl.firstChild); } if(!cwDel){ cwEl.childNodes[0].textContent=l.slice(0,cwC+1); cwC++; if(cwC===l.length){ setTimeout(()=>{cwDel=true;cwType();},2000); return; } } else { cwEl.childNodes[0].textContent=l.slice(0,cwC-1); cwC--; if(cwC===0){ cwDel=false; cwI=(cwI+1)%cwLines.length; } } setTimeout(cwType,cwDel?40:70); } cwType(); }
+
+// ── Floating background particles in stats
+const statsSection=document.getElementById('stats');
+for(let i=0;i<20;i++){
+  const p=document.createElement('div'); p.className='particle';
+  const size=Math.random()*6+3;
+  p.style.cssText=`width:${size}px;height:${size}px;left:${Math.random()*100}%;bottom:${Math.random()*20}px;background:rgba(255,255,255,${Math.random()*.3+.1});animation-duration:${Math.random()*10+8}s;animation-delay:${Math.random()*5}s;`;
+  statsSection.appendChild(p);
+}
+
+// ── Smooth scroll for all anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{ const t=document.querySelector(a.getAttribute('href')); if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); } });
+});
+</script>
+</body>
+</html>
