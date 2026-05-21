@@ -345,12 +345,12 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;back
 @media(max-width:480px){
   .program-visual
   {
-    margin-left: -10px;
-    width: 370px;
+    margin-left: -15px;
+    width: 350px;
 }
 .program-content
 {
-   margin-left: -10px;
-    width: 370px;
+   margin-left: -15px;
+    width: 350px;
 }
 }
