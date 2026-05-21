@@ -1089,6 +1089,6 @@ footer::before {
   .hero-stats { grid-template-columns: 1fr 1fr; }
   .hero-h1 { font-size: 30px; }
   .announce-bar { display: none; }
-  .section-tag{width: 40%;padding: 2px;}
+  .section-tag{width: 40%;}
  
 }
