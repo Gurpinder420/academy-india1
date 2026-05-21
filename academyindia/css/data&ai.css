@@ -19,6 +19,7 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;}
+html,body{overflow-x: hidden;}
 
 /* ===== SCROLLBAR ===== */
 ::-webkit-scrollbar{width:6px;}
@@ -345,11 +346,11 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;back
   .program-visual
   {
     margin-left: -10px;
-    width: 400px;
+    width: 370px;
 }
 .program-content
 {
    margin-left: -10px;
-    width: 400px;
+    width: 370px;
 }
 }
