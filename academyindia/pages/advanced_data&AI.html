@@ -181,6 +181,8 @@
         </div>
     </div>
 
+     <div class="overlay" id="overlay"></div>
+
 <!-- Floating particles canvas -->
 <canvas id="particles-canvas"></canvas>
 
@@ -839,7 +841,7 @@
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
- <!-- nav -->
+<!-- nav -->
      <script>
         // ========== NAVBAR SCROLL EFFECT ==========
         const navbar = document.getElementById('navbar');
@@ -897,8 +899,9 @@
         
         mobileCoursesBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            mobileCoursesDropdown.classList.toggle('active');
-            mobileCoursesIcon.style.transform = mobileCoursesDropdown.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+            const isOpen = mobileCoursesDropdown.classList.toggle('active');
+            mobileCoursesIcon.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0)';
+            mobileCoursesDropdown.style.maxHeight = isOpen ? `${mobileCoursesDropdown.scrollHeight}px` : '0';
         });
         
         // ========== ACTIVE LINK HIGHLIGHTING ==========

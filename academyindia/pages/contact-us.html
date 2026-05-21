@@ -183,6 +183,8 @@
         </div>
     </div>
 
+     <div class="overlay" id="overlay"></div>
+
 <!-- HERO SECTION -->
 <section class="hero" id="home">
   <div class="hero-bg-anim">
@@ -636,8 +638,7 @@
 </button>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
- <!-- nav -->
+<!-- nav -->
      <script>
         // ========== NAVBAR SCROLL EFFECT ==========
         const navbar = document.getElementById('navbar');
@@ -695,8 +696,9 @@
         
         mobileCoursesBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            mobileCoursesDropdown.classList.toggle('active');
-            mobileCoursesIcon.style.transform = mobileCoursesDropdown.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+            const isOpen = mobileCoursesDropdown.classList.toggle('active');
+            mobileCoursesIcon.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0)';
+            mobileCoursesDropdown.style.maxHeight = isOpen ? `${mobileCoursesDropdown.scrollHeight}px` : '0';
         });
         
         // ========== ACTIVE LINK HIGHLIGHTING ==========

@@ -333,12 +333,15 @@
         .mobile-dropdown-content {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.4s ease;
-            padding-left: 1rem;
+                opacity: 0;
+            transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.25s ease;
+            padding: 0 0 0 1rem;
         }
 
         .mobile-dropdown-content.active {
-            max-height: 800px;
+            max-height: 2000px;
+            opacity: 1;
+            padding: 1rem 0 0 1rem;
         }
 
         .mobile-dropdown-category {
