@@ -61,7 +61,7 @@
   /* ============================================================
      LAYOUT UTILITIES
   ============================================================ */
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+ .container { max-width: 1200px; margin: 0 auto; padding: 0 24px;}
   .section { padding: 120px 0; position: relative; }
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;display: flex;flex-direction: column;}
   .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
