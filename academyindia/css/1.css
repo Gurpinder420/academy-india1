@@ -108,6 +108,7 @@
             border-radius: 12px;
             transition: all 0.3s ease;
             position: relative;
+            
         }
 
         /* Hover Underline Animation */
@@ -122,6 +123,7 @@
             transition: all 0.3s ease;
             transform: translateX(-50%);
             border-radius: 2px;
+            
         }
 
         .nav-link:hover::after,
@@ -288,6 +290,8 @@
             padding: 5rem 1.5rem 2rem;
             overflow-y: auto;
             box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+            border: 2px solid red;
+            margin-top: 60px;
         }
 
         .mobile-sidebar.active {
@@ -946,7 +950,6 @@
       .footer-container
       {
         display: flex;
-        /* border: 2px solid red; */
         justify-content: space-between;
        
         
@@ -959,7 +962,6 @@
       }
       .footer-col
       {
-        /* border: 2px solid red; */
         width: 24%;
         /* padding: 20px; */
       }
@@ -1005,8 +1007,7 @@
       }
       .footer-col a p
       {
-        /* border: 2px solid red; */
-        font-size: 1.1em;
+         font-size: 1.1em;
         margin-top: 10px;
         color: black;
       }
@@ -1128,7 +1129,6 @@
             }
             .hamburger {
                 display: flex;
-                border: 2px solid red;
                 font-size: 1.5rem;
                 
             }

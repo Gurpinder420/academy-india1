@@ -776,7 +776,15 @@
             document.body.style.overflow = '';
         }
         
-        hamburger.addEventListener('click', openMobileMenu);
+        function toggleMobileMenu() {
+            if (mobileSidebar.classList.contains('active')) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        }
+        
+        hamburger.addEventListener('click', toggleMobileMenu);
         overlay.addEventListener('click', closeMobileMenu);
         
         // Close mobile menu when clicking on a link

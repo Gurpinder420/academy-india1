@@ -183,7 +183,7 @@
     </div>
     
     <div class="overlay" id="overlay"></div>
-    
+
 <!-- Floating blobs -->
 <div class="blob blob1"></div>
 <div class="blob blob2"></div>
@@ -419,8 +419,16 @@
             document.body.style.overflow = '';
         }
         
-        hamburger.addEventListener('click', openMobileMenu);
-        overlay.addEventListener('click', closeMobileMenu);
+        function toggleMobileMenu() {
+            if (mobileSidebar.classList.contains('active')) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        }
+        
+        hamburger.addEventListener('click', toggleMobileMenu);
+        overlay.addEventListener('click', closeMobileMenu);}]}{
         
         // Close mobile menu when clicking on a link
         document.querySelectorAll('.mobile-nav-link').forEach(link => {
