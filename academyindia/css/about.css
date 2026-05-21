@@ -537,3 +537,14 @@
     .mv-card { padding: 32px 24px; }
     .cta-btns { flex-direction: column; align-items: center; }
   }
+  @media (max-width: 480px) {
+ .hero-about-text
+ {
+  width: 100%;
+ }
+    .stats-grid
+ {
+ display: flex;
+  flex-direction: column;
+ }
+  }

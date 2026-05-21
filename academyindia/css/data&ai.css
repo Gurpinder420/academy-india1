@@ -341,3 +341,10 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;back
   .tools-grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));}
   .cta-btns{flex-direction:column;align-items:center;}
 }
+@media(max-width:768px){
+  .program-visual
+  {
+    margin-left: -15px;
+}
+
+}

@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Digital Academy - Programming & Development</title>
- <link rel="stylesheet" href="/css/1.css">
- <link rel="stylesheet" href="/css/programming-dev.css">
+ <link rel="stylesheet" href="../css/1.css">
+ <link rel="stylesheet" href="../css/programming-dev.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
@@ -25,11 +25,8 @@
      <nav class="navbar" id="navbar">
         <div class="nav-container">
             <!-- Logo -->
-            <a href="#" class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <span class="logo-text">DigitalAcademy</span>
+             <a href="#" class="logo">
+                <span class="logo-text">AcademyIndia</span>
             </a>
 
             <!-- Desktop Menu -->
@@ -130,7 +127,7 @@
         </div>
     </nav>
 
-    <!-- Mobile Sidebar -->
+     <!-- Mobile Sidebar -->
     <div class="mobile-sidebar" id="mobileSidebar">
         <div style="display: flex; flex-direction: column; gap: 0.5rem;">
             <a href="/index.html" class="mobile-nav-link">🏠 Home</a>
@@ -262,7 +259,7 @@
 </section>
 
 <!-- ===== 6. TESTIMONIALS ===== -->
-<section class="testimonials-section reveal">
+<section class="testimonials-section reveal" style="display: none;" >
     <div class="section-header"><h2>What Students Say</h2><p>Real stories from students who transformed their careers</p></div>
     <div class="testimonials-swiper swiper" id="testimonialsSwiper">
         <div class="swiper-wrapper" id="testimonialsWrapper"></div>
@@ -676,6 +673,18 @@ const revealObserver=new IntersectionObserver((entries)=>{
     entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('active');}});
 },{threshold:0.15});
 revealElements.forEach(el=>revealObserver.observe(el));
+
+// section
+
+const revealObservers = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('active');
+        }
+    });
+},{
+    threshold:0.05
+});
 </script>
 </body>
 </html>
